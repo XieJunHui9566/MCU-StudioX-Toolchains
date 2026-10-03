@@ -54,7 +54,7 @@
       "version": "1.0.0",
       "host": "win-x64",
       "specification": "pc.mingw/1.0.0/component.json",
-      "publicationStatus": "pending-materials"
+      "publicationStatus": "ready"
     },
     {
       "id": "riscv.xpack",

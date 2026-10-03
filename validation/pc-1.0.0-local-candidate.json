@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "pc.mingw",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "mingw-gcc-13.1.0",
+  "manifestSha256": "7e111a102f6fb1db10cae1faa8174d9d568d0c3a676ca5657ea3f005a131d3f4",
+  "archiveSha256": "4B7E9F74D59C87E0A9B41522C0D42D3747D3D2D20D366B20C22900C7D3F454E5",
+  "downloadBytes": 51226575,
+  "installedBytes": 359194033,
+  "checks": [
+    "explicit supported component identity",
+    "full archive import preserves exact manifest and verifies every file",
+    "duplicate import verifies and preserves installed component",
+    "c-build succeeds with isolated environment",
+    "c-run succeeds with isolated environment",
+    "real C program executes integer division and runtime IO",
+    "cpp-build succeeds with isolated environment",
+    "cpp-run succeeds with isolated environment",
+    "real C++ program executes STL and bundled runtime libraries"
+  ],
+  "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
+}

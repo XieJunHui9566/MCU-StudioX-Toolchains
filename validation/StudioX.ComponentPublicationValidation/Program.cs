@@ -7,6 +7,12 @@ using StudioX.Engine;
 using StudioX.Foundation;
 using StudioX.Packages;
 
+if (args is ["--verify-local-component", var archiveFile, var localOutput])
+{
+    await ComponentBuildChecks.RunAsync(Path.GetFullPath(archiveFile), Path.GetFullPath(localOutput));
+    return;
+}
+
 if (args is ["--verify-public-component", var sourceUrl, var publisherKey, var componentId, var componentVersion, var publicOutput])
 {
     var root = Path.GetFullPath(publicOutput);

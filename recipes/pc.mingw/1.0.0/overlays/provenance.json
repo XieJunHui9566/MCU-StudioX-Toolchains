@@ -1,0 +1,63 @@
+{
+  "formatVersion": 1,
+  "distribution": "MinGW-W64-builds 5.0.0 / x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1",
+  "upstream": [
+    "https://github.com/niXman/mingw-builds-binaries/releases/tag/13.1.0-rt_v11-rev1",
+    "https://github.com/niXman/mingw-builds",
+    "https://gcc.gnu.org/",
+    "https://www.mingw-w64.org/",
+    "https://www.gnu.org/software/binutils/"
+  ],
+  "sourceUrlsRecordedByDistribution": [
+    "https://ftp.gnu.org/gnu/binutils/binutils-2.39.tar.xz",
+    "https://ftp.gnu.org/gnu/gcc/gcc-13.1.0/gcc-13.1.0.tar.xz",
+    "https://ftp.gnu.org/gnu/gdb/gdb-11.2.tar.xz",
+    "https://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz",
+    "https://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2",
+    "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+    "https://ftp.gnu.org/gnu/mpfr/mpfr-4.1.0.tar.xz",
+    "https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz",
+    "https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz",
+    "https://ftp.gnu.org/gnu/termcap/termcap-1.3.1.tar.gz",
+    "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz",
+    "https://github.com/Furniel/libgnurx/releases/download/2.8.0/libgnurx-2.8.0.tar.xz",
+    "https://github.com/madler/zlib/archive/refs/tags/v1.2.13.tar.gz",
+    "https://github.com/msys2-contrib/cpython-mingw.git",
+    "https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz",
+    "https://libisl.sourceforge.io/isl-0.25.tar.xz",
+    "https://prdownloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz",
+    "https://prdownloads.sourceforge.net/tcl/tk8.6.11-src.tar.gz",
+    "https://sourceforge.net/projects/expat/files/expat/2.5.0/expat-2.5.0.tar.xz",
+    "https://sourceware.org/pub/bzip2/bzip2-1.0.6.tar.gz",
+    "https://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz",
+    "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+    "https://www.openssl.org/source/openssl-1.1.1k.tar.gz",
+    "https://www.sqlite.org/2021/sqlite-autoconf-3350500.tar.gz"
+  ],
+  "originalBuildInfoSha256": "d12271d25e0c38b2f3fe337b2b1c93a9d9b0d97e10ff3421fdf5d0b2c2b13997",
+  "selectedSourceFingerprint": "41c7a94095be6a437ffa64b76235202ddd7837094aa038ab2d32f386069612b2",
+  "selectedSourceFileCount": 3661,
+  "selectedSourceBytes": 358723932.0,
+  "sourceFingerprintFormat": "SHA-256 of UTF-8 sorted relativePath=sha256 entries joined by LF, without trailing LF",
+  "target": "x86_64-w64-mingw32",
+  "gccVersionOutput": "gcc.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "gxxVersionOutput": "g++.exe (x86_64-win32-seh-rev1, Built by MinGW-Builds project) 13.1.0",
+  "binutilsVersionOutput": "GNU ld (GNU Binutils) 2.39",
+  "peImports": [
+    "KERNEL32.dll",
+    "libgcc_s_seh-1.dll",
+    "libstdc++-6.dll",
+    "libwinpthread-1.dll",
+    "msvcrt.dll",
+    "USER32.dll"
+  ],
+  "validation": {
+    "lto": true,
+    "path": "Only prepared gcc/bin and Windows system directories; compiler/include/library override variables removed.",
+    "cpp": "STUDIOX_PC_CPP_OK",
+    "c": "STUDIOX_PC_C_OK"
+  },
+  "retained": "C/C++ drivers, cc1/cc1plus, collect2/LTO, GNU assembler/linker/archive tools, complete C/C++/Windows headers/import libraries/startup resources, required runtime DLLs, original build-info and license tree.",
+  "excluded": "GDB/Python runtime, Fortran front-end/libraries, documentation/translations, install-tools and duplicate driver aliases. No CMake/Ninja copy; StudioX reuses its bundled build system.",
+  "redistribution": "Local installed binary distribution copied without binary modifications; original source/build references retained. Upstream links and this inventory do not replace GPL Corresponding Source delivery requirements for public redistribution."
+}
