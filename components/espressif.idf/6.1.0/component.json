@@ -1,17 +1,39 @@
 {
-  "license": "NOASSERTION",
+  "license": "ESP-IDF Apache-2.0 and retained per-component/vendor-library notices; Espressif GCC/Binutils/GDB GPL with runtime exceptions; Git/MSYS per-file GPL/LGPL/permissive; Python PSF and package notices; CMake BSD-3-Clause with standalone Qt GPL option; Ninja Apache-2.0",
   "sourceUrls": [
     "https://github.com/espressif/esp-idf/releases/tag/v6.1",
     "https://github.com/espressif/crosstool-NG"
   ],
-  "releaseNotes": "ESP-IDF 6.1.0 local candidate. Exact SDK/compiler identity and side-by-side import validated; no automatic project migration.",
+  "releaseNotes": "提供匹配源码、厂商构建脚本及依赖材料。完整导入与重复导入、三个架构基础编译及 ESP32-S3 完整 SDK 构建通过。精确版本并存，已有工程内容锁保持原样。",
   "compilerId": "esp-idf",
   "validation": {
-    "evidence": "validation/7z-local-candidates-20261003.json",
-    "notes": "Local native compilation, complete component import and duplicate import passed; public release materials remain incomplete.",
-    "status": "recorded",
-    "scope": "offline-build-and-import-local-candidate",
-    "hardware": false
+    "formatVersion": 1,
+    "status": "passed",
+    "scope": "offline-build-and-import",
+    "hardware": false,
+    "id": "espressif.idf",
+    "version": "6.1.0",
+    "host": "win-x64",
+    "compilerId": "esp-idf",
+    "manifestSha256": "3f7c9501c70555aac188f9266863f028cc977934d7e03f0eeffc0410cee98f95",
+    "archiveSha256": "1E94EBF42C6F91FA1AC069FC1C94F012D767CE5240A6630A9F8582E5CDAB6D28",
+    "downloadBytes": 766142319,
+    "installedBytes": 6136108498,
+    "checks": [
+      "explicit supported component identity",
+      "full archive import preserves exact manifest and verifies every file",
+      "duplicate import verifies and preserves installed component",
+      "gcc-esp32-build succeeds with isolated environment",
+      "gcc-esp32 creates real ELF with installed headers, compiler and linker",
+      "gcc-esp32s3-build succeeds with isolated environment",
+      "gcc-esp32s3 creates real ELF with installed headers, compiler and linker",
+      "gcc-riscv-build succeeds with isolated environment",
+      "gcc-riscv creates real ELF with installed headers, compiler and linker",
+      "openocd-version succeeds with isolated environment",
+      "cmake-version succeeds with isolated environment",
+      "ninja-version succeeds with isolated environment"
+    ],
+    "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
   },
   "host": "win-x64",
   "payloadFileCount": 56242,
@@ -20,12 +42,289 @@
   "id": "espressif.idf",
   "manifestSha256": "3f7c9501c70555aac188f9266863f028cc977934d7e03f0eeffc0410cee98f95",
   "publication": {
-    "reviewEvidence": null,
-    "sourceAssets": [],
-    "status": "pending-materials",
-    "blockers": [
-      "Archive matching corresponding source, build scripts and dependency materials; complete redistribution review."
-    ]
+    "status": "ready",
+    "blockers": [],
+    "sourceAssets": [
+      {
+        "file": "git-2.55.0.windows.5-corresponding-sources.7z",
+        "bytes": 1287109400,
+        "sha256": "8e29e8182399d7d3487d4986f57d23bd8268bf5f8d20ee2da1d9ace1aaf4d0ac"
+      },
+      {
+        "file": "esp-python-packages-corresponding-sources.7z",
+        "bytes": 78408156,
+        "sha256": "e78f5b034aa4ab93bb6cc6b00c6e33e195249400dadaa86932e9ea6aa854cd12"
+      },
+      {
+        "file": "esp-idf-6.1.0-exact-sdk-and-licenses.7z",
+        "bytes": 53959485,
+        "sha256": "1cadce04f1c0eb31c080686b424867509458362379d97730f1b76c979ce8667f"
+      },
+      {
+        "file": "Python-3.11.2.tar.xz",
+        "bytes": 17365152,
+        "sha256": "3278ef35df40ca56fcdf0c51a027ce6d0b946bea733f6aa792efa862ed4e9d40"
+      },
+      {
+        "file": "qtbase-everywhere-opensource-src-5.15.10.tar.xz",
+        "bytes": 50422688,
+        "sha256": "c0d06cb18d20f10bf7ad53552099e097ec39362d30a5d6f104724f55fa1c8fb9"
+      },
+      {
+        "file": "ninja-1.12.1.tar.gz",
+        "bytes": 240483,
+        "sha256": "821bdff48a3f683bc4bb3b6f0b5fe7b2d647cf65d52aeb63328c91a6c6df285a"
+      },
+      {
+        "file": "gmp-6.3.0.tar.xz",
+        "bytes": 2094196,
+        "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898"
+      },
+      {
+        "file": "mpfr-4.2.1.tar.xz",
+        "bytes": 1493608,
+        "sha256": "277807353a6726978996945af13e52829e3abd7a9a5b7fb2793894e18f1fcbb2"
+      },
+      {
+        "file": "mpc-1.3.1.tar.gz",
+        "bytes": 773573,
+        "sha256": "ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8"
+      },
+      {
+        "file": "isl-0.26.tar.xz",
+        "bytes": 2035560,
+        "sha256": "a0b5cb06d24f9fa9e77b55fabbe9a3c94a336190345c2555f9915bb38e976504"
+      },
+      {
+        "file": "zlib-1.3.1.tar.gz",
+        "bytes": 1572744,
+        "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c"
+      },
+      {
+        "file": "zstd-1.5.6.tar.gz",
+        "bytes": 2406875,
+        "sha256": "8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1"
+      },
+      {
+        "file": "gcc-6_6.3.0.orig.tar.gz",
+        "bytes": 81587460,
+        "sha256": "04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151"
+      },
+      {
+        "file": "gcc-6_6.3.0-18.diff.gz",
+        "bytes": 2045830,
+        "sha256": "7e76d64b79c0b6bed356ae752a2017746d4b069bc78624da0c94b8169f1f51cc"
+      },
+      {
+        "file": "debian-gcc-6_6.3.0-18.dsc",
+        "bytes": 27145,
+        "sha256": "faa23e7b7ce387d19532df421d8538218f973075c3b92b37f95811d7677ae80e"
+      },
+      {
+        "file": "gcc-mingw-w64_19.3.tar.xz",
+        "bytes": 24824,
+        "sha256": "fa27f3843e7c8705dfb241190f28be6bc9a10cea014fdbac58ad47ece50a7ebd"
+      },
+      {
+        "file": "debian-gcc-mingw-w64_19.3.dsc",
+        "bytes": 3391,
+        "sha256": "36026e3c4d7ec41d77eb41217c526121dbf0acef6801a040b71e3a7ea6926d85"
+      },
+      {
+        "file": "mingw-w64_5.0.1.orig.tar.bz2",
+        "bytes": 9160780,
+        "sha256": "9bb5cd7df78817377841a63555e73596dc0af4acbb71b09bd48de7cf24aeadd2"
+      },
+      {
+        "file": "mingw-w64_5.0.1-1.debian.tar.xz",
+        "bytes": 102748,
+        "sha256": "9a96022a5ba3f074e06f3a8e32a2f8a918c1594b287add57c3ddc5d8c2b8656c"
+      },
+      {
+        "file": "debian-mingw-w64_5.0.1-1.dsc",
+        "bytes": 2282,
+        "sha256": "d8332e5ef5d97d553c537c12d278816ac8c133e945220c82d340b9254b4c2202"
+      },
+      {
+        "file": "cpython-source-deps-bzip2-1.0.8.tar.gz",
+        "bytes": 818771,
+        "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2"
+      },
+      {
+        "file": "cpython-source-deps-libffi-3.4.3.tar.gz",
+        "bytes": 1373156,
+        "sha256": "9807b500e666fa5d1785629bf3f3ab22a0731ad23627e731ead14465480046e0"
+      },
+      {
+        "file": "cpython-source-deps-openssl-1.1.1s.tar.gz",
+        "bytes": 10050763,
+        "sha256": "118544b479ad0fcd9d4db5665b2e778595cc42c55fc7c9db6b5e0de084618472"
+      },
+      {
+        "file": "cpython-source-deps-sqlite-3.39.4.0.tar.gz",
+        "bytes": 2556798,
+        "sha256": "4816f17cc0ff7ff400ea309dff33b8008a6d1205020160d1914007c694491151"
+      },
+      {
+        "file": "cpython-source-deps-tcl-core-8.6.12.1.tar.gz",
+        "bytes": 10398458,
+        "sha256": "5ffc5db0f9d47358b87f33f4f566452667c90d70a6cc9547b48de239db3ca7f8"
+      },
+      {
+        "file": "cpython-source-deps-tk-8.6.12.1.tar.gz",
+        "bytes": 4509097,
+        "sha256": "c6cda9f333b499b9861db57a946b21fccce6d68b5ade74b53dd2045fbbcc5e45"
+      },
+      {
+        "file": "cpython-source-deps-tix-8.4.3.6.tar.gz",
+        "bytes": 1836451,
+        "sha256": "f7b21d115867a41ae5fd7c635a4c234d3ca25126c3661eb36028c6e25601f85e"
+      },
+      {
+        "file": "cpython-source-deps-xz-5.2.5.tar.gz",
+        "bytes": 1744796,
+        "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282"
+      },
+      {
+        "file": "cpython-source-deps-zlib-1.2.13.tar.gz",
+        "bytes": 1554520,
+        "sha256": "ed0394d5358f3c4f2465fababac1bfd4e25205fc8c980c223b826bfbe56a528d"
+      },
+      {
+        "file": "cmake-4.0.3.tar.gz",
+        "bytes": 11830216,
+        "sha256": "8d3537b7b7732660ea247398f166be892fe6131d63cc291944b45b91279f3ffb"
+      },
+      {
+        "file": "espressif-binutils-gdb-esp-2.45.0_20251204-99fe9ecb9fb65a69be65944eb1bbd7e42dfe0857.tar.gz",
+        "bytes": 70514102,
+        "sha256": "b67660e4081e9b0aa179a58de467890bace6765f1a2fc44ab22982258289301b"
+      },
+      {
+        "file": "espressif-crosstool-NG-esp-15.2.0_20251204-754c9fcbd9c7fbcbd7aad940c61e71d982442e0d.tar.gz",
+        "bytes": 2006503,
+        "sha256": "69041c3c93a7119629fcbc09374d8f039eb8ea0cb5e150fb68188a325670bda0"
+      },
+      {
+        "file": "espressif-crosstool-NG-overlays-dd1cf19f6eb327a9db51043439974a6de13f5c7f.tar.gz",
+        "bytes": 385468,
+        "sha256": "2ff44e3932c4209d4be2ea8f4863c4c19d96636fd308ea7c557206be86f92c56"
+      },
+      {
+        "file": "espressif-crosstool-NG-xtensa-dynconfig-c545876fb73c0ada60cb6413c61554f5b93d4e8a.tar.gz",
+        "bytes": 29855,
+        "sha256": "6483fbfb3b2ccc5d3710946de90afda65d6ee4a6e6917fde3e49cab3b989b3b8"
+      },
+      {
+        "file": "espressif-gcc-esp-15.2.0_20251204-0dbf584943ac179894690b389f3a37926bb4cd33.tar.gz",
+        "bytes": 152810169,
+        "sha256": "05b8350c63265c75df816c66fb23b4ee1ee69cf756e0cae495ec8640e0fde22d"
+      },
+      {
+        "file": "espressif-newlib-esp32-esp-4.5.0_20251204-3791bbda4f4720c53cede3f1df710548aa81e346.tar.gz",
+        "bytes": 12445499,
+        "sha256": "6ec6420fc6c3b6b4920c61c9fa05c2290a6bf70342a6aca3cef94bb33731fabb"
+      },
+      {
+        "file": "espressif-picolibc-esp-1.8.10_20251204-1738c754778fd2bbb3cc9bf61e1db4d41331630d.tar.gz",
+        "bytes": 3726019,
+        "sha256": "b56fca2b716a2dd1a72cab8111b78254d9fe8850e4dfab26ac5f0c8d72061b2f"
+      },
+      {
+        "file": "espressif-crosstool-NG-esp-toolchain-bin-wrappers-9db686e75808957decffcd939daecea36232c776.tar.gz",
+        "bytes": 13482,
+        "sha256": "1b139e83aaaf44ad066dbc88a281d76b1e087a619f0078726b14e6411b528721"
+      },
+      {
+        "file": "espressif-binutils-gdb-esp-gdb-v17.1_20260402-4418bf9dbcfd17aed2476aa1ae4c6e902e149785.tar.gz",
+        "bytes": 74433431,
+        "sha256": "0cf2b88c159a890b945869e3777f2e4d7f2b8a1e7c3a143443b109a0ece83079"
+      },
+      {
+        "file": "espressif-binutils-gdb-esp32ulp-elf-2.38_20240113-90457b0a7dfeb40c17a0052ef145626b12f69e49.tar.gz",
+        "bytes": 60300340,
+        "sha256": "06a592a34c3adc68b7517c2382684544b7ee45b3bd55ab324ddf4f4466617b32"
+      },
+      {
+        "file": "espressif-openocd-esp32-v0.12.0-esp32-20260703-b9ed84ca01e370968f472e88f12feb59438556a8.tar.gz",
+        "bytes": 4557478,
+        "sha256": "d9062800d26a4d31d5fc119ce60ec4ba5661ebd77d033af950b79c4b29f8333b"
+      },
+      {
+        "file": "espressif-openocd-esp32-contrib-loaders-flash-espressif-esp-stub-lib-4f277e223863039b3a609555c5b27779b3a6901f.tar.gz",
+        "bytes": 1540093,
+        "sha256": "386ce69c0e263d37536822f68af8cabe7bcb04d6fceff943b0d64a8065c04631"
+      },
+      {
+        "file": "espressif-openocd-esp32-jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz",
+        "bytes": 4466344,
+        "sha256": "826639516ad21262b67f4e5b053d844c1fc1823815458ce9fbd7c19a9639551d"
+      },
+      {
+        "file": "espressif-openocd-esp32-src-jtag-drivers-libjaylink-f73ad5e667ae8b26a52b847c603fdadaabf302a6.tar.gz",
+        "bytes": 72014,
+        "sha256": "e22a6f2c6d848eb5c047619f286a41473c0158dffaed65033276756dd00aeab3"
+      },
+      {
+        "file": "esp-openocd-libusb-1.0.29.tar.gz",
+        "bytes": 415762,
+        "sha256": "7c2dd39c0b2589236e48c93247c986ae272e27570942b4163cb00a060fcf1b74"
+      },
+      {
+        "file": "esp-openocd-hidapi-0.14.0.tar.gz",
+        "bytes": 348221,
+        "sha256": "a5714234abe6e1f53647dd8cba7d69f65f71c558b7896ed218864ffcf405bcbd"
+      },
+      {
+        "file": "esp-openocd-libjaylink-0.3.1.tar.gz",
+        "bytes": 75147,
+        "sha256": "a2d98c1aa13dcf41c6c681767a43cdefc42b6f71af9362937555051007514cd9"
+      },
+      {
+        "file": "esp-openocd-jimtcl-0.83.tar.gz",
+        "bytes": 4465834,
+        "sha256": "6f2df00009f5ac4ad654c1ae1d2f8ed18191de38d1f5a88a54ea99cc16936686"
+      },
+      {
+        "file": "esp-openocd-zlib-1.2.11.tar.xz",
+        "bytes": 467960,
+        "sha256": "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066"
+      },
+      {
+        "file": "libftdi1-1.5.tar.bz2",
+        "bytes": 116297,
+        "sha256": "7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049"
+      },
+      {
+        "file": "mpc-1.3.0.tar.gz",
+        "bytes": 773441,
+        "sha256": "0e3b12181d37207230f5a7a7ddcfc22abfc5fc9c05825e1a65401a489a432a2a"
+      },
+      {
+        "file": "mpfr-4.2.2.tar.xz",
+        "bytes": 1505596,
+        "sha256": "b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01"
+      },
+      {
+        "file": "expat-2.7.1.tar.gz",
+        "bytes": 785356,
+        "sha256": "0cce2e6e69b327fc607b8ff264f4b66bdf71ead55a87ffd5f3143f535f15cfa2"
+      },
+      {
+        "file": "ncurses-6.5.tar.gz",
+        "bytes": 3688489,
+        "sha256": "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6"
+      },
+      {
+        "file": "espressif.idf-6.1.0-build-and-notices.zip",
+        "bytes": 2516114,
+        "sha256": "39c50a5584bb698edd980432ee55c7d8f3ccc6eb735704850b57d9720a2291dc"
+      }
+    ],
+    "reviewEvidence": {
+      "file": "reviews/espressif.idf-6.1.0-win-x64.json",
+      "sha256": "77c7d243748054cc285d4c543ea1be246cae6d1b502df1d61ca90f7d714d7353"
+    }
   },
   "formatVersion": 1
 }
