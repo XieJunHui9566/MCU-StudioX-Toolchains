@@ -21,4 +21,12 @@
 
 完整与轻量安装包都能导入组件。组件不修改系统 PATH，不安装全局 Python，不自动连接或烧录设备。
 
-从百度网盘等镜像取得 `.mcutoolchain` 时，选择手动导入即可，无需改名或解压。发布者应同时提供该组件的对应源码文件、`source-assets.json` 和 SHA-256 清单。网盘分享页不是直接归档下载地址，应通过浏览器下载后导入；手动模式不依赖 GitHub。
+## 百度网盘手动下载
+
+[MCUStdioX · 百度网盘](https://pan.baidu.com/s/5fh5exaJIgC6ThwSS_IdDOA)
+
+1. 在浏览器打开分享页，下载工程所需精确版本的 `.mcutoolchain` 文件。
+2. 使用配套 `SHA256SUMS.txt` 或同版本 GitHub Release 中的摘要核对文件。
+3. 在 IDE 的开发环境组件管理中选择手动导入，选中下载的组件包，核对身份和版本后导入。
+
+无需改名或解压。发布者应同时提供该组件的对应源码文件、`source-assets.json` 和 SHA-256 清单。网盘分享页供浏览器下载使用，IDE 自动获取仍使用签名 GitHub 目录；手动模式不依赖 GitHub。
