@@ -20,6 +20,7 @@ ESP-IDF 5.5.5、6.0.3、6.1.0 已登记为本地候选组件，版本并存，�
 - [签名下载目录](catalog/catalog.json)：只收录已审阅、验证并公开发布的组件。
 - [发布者公钥](trust/publisher.pem)与[指纹](trust/publisher.json)：RSA-PSS/SHA-256。
 - [用户操作](docs/USAGE.md)、[维护与发布](docs/PUBLISHING.md)、[归档格式](docs/FORMAT.md)。
+- [再分发材料与 AGM 联系方式](docs/REDISTRIBUTION.md)：区分开源许可证义务和需要厂商确认的专有部分。
 
 归档二进制只放 GitHub Releases，Git 不收录 SDK、工具二进制或私钥。IDE 产品版本不随组件发布改变；新组件版本并存，已有工程不会自动更换版本或内容锁。
 
