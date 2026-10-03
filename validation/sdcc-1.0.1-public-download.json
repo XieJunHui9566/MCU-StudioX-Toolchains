@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "public-download-and-import",
+  "hardware": false,
+  "sourceUrl": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/main/catalog/catalog.json",
+  "id": "stc.sdcc",
+  "version": "1.0.1",
+  "compilerId": "sdcc-4.5.0-15242",
+  "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+  "archiveSha256": "B4C1755EB5FA5BF2F77FAC7D46E373B4ECC33A72D33F6427FFC98A329FE0176F",
+  "catalogSha256": "2CD441249330D34BA31E1324F1FC2E34E9DE7DE01C0C655473E3D502DA1E3C88",
+  "verification": "\u7B7E\u540D\u5339\u914D\u6240\u9009\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "checks": [
+    "verified public catalog",
+    "actual HTTPS Release download and SHA-256",
+    "verified cache reuse",
+    "archive identity and sizes",
+    "full imported file verification",
+    "duplicate import preserves component"
+  ]
+}
