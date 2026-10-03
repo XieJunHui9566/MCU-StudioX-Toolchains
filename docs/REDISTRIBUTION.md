@@ -4,7 +4,7 @@
 
 GNU GPL 工具即使二进制未修改，仍须按适用条款提供对应源码及编译、安装脚本等材料；仅填写上游源码链接不足以证明已经交付。参见 [GNU GPL FAQ](https://www.gnu.org/licenses/gpl-faq.en.html#UnchangedJustBinary)。ESP-IDF 多数组件采用 Apache 2.0，附带依赖及独立工具继续按各自许可证处理，参见[乐鑫说明](https://www.espressif.com/en/products/sdks/esp-idf)。这些说明不是某一完整组件包的审阅结论。
 
-本仓库先保存本地清单、来源和验证记录，再收集与二进制对应的源码归档、补丁、构建脚本及依赖材料，记录摘要。材料与审阅完成后才将 `pending-materials` 改为可发布状态并公开二进制。现有 STC Release 已提供对应材料；其他候选组件仍按登记状态处理。
+本仓库先保存本地清单、来源和验证记录，再收集与二进制对应的源码归档、补丁、构建脚本及依赖材料，记录摘要。材料与审阅完成后才将 `pending-materials` 改为可发布状态并公开二进制。现有 9 个正式 Release 已提供对应材料，包括 ARM、通用 RISC-V、PC MinGW、SDCC、Icarus Verilog 和四个 ESP-IDF 版本；其余原组件按登记中的具体缺口处理。
 
 ## AGM / Supra 联系方式
 

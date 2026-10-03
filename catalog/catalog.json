@@ -121,6 +121,21 @@
       "releaseNotes": "提供匹配源码、厂商构建脚本及依赖材料。完整导入与重复导入、三个架构基础编译及 ESP32-S3 完整 SDK 构建通过。精确版本并存，已有工程内容锁保持原样。",
       "pluginApi": 0,
       "frameworks": []
+    },
+    {
+      "kind": "tool",
+      "id": "espressif.idf",
+      "version": "6.1.0",
+      "name": "Espressif ESP-IDF 6.1.0",
+      "archive": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/espressif.idf-6.1.0-win-x64/espressif.idf-6.1.0-win-x64.mcutoolchain",
+      "sha256": "1E94EBF42C6F91FA1AC069FC1C94F012D767CE5240A6630A9F8582E5CDAB6D28",
+      "downloadBytes": 766142319,
+      "installedBytes": 6136108498,
+      "license": "ESP-IDF Apache-2.0 and retained per-component/vendor-library notices; Espressif GCC/Binutils/GDB GPL with runtime exceptions; Git/MSYS per-file GPL/LGPL/permissive; Python PSF and package notices; CMake BSD-3-Clause with standalone Qt GPL option; Ninja Apache-2.0",
+      "sourceUrl": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/tree/main/components/espressif.idf/6.1.0",
+      "releaseNotes": "提供匹配源码、厂商构建脚本及依赖材料。完整导入与重复导入、三个架构基础编译及 ESP32-S3 完整 SDK 构建通过。精确版本并存，已有工程内容锁保持原样。",
+      "pluginApi": 0,
+      "frameworks": []
     }
   ]
 }

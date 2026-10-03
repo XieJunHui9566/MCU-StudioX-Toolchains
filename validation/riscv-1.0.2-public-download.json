@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "public-download-and-import",
+  "hardware": false,
+  "sourceUrl": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/fa006cd/catalog/catalog.json",
+  "id": "riscv.xpack",
+  "version": "1.0.2",
+  "compilerId": "xpack-riscv-gcc-15.2.0",
+  "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+  "archiveSha256": "D10A8E1559F2D48BB9EE1E3AAF86B4185807269F40862F6CEE7D5F22DD37E25A",
+  "catalogSha256": "2D8B9FFFFA7203F1F0C5A734AEFC4E42D681F1048C49C6EF2A6C8B92CA3D4B54",
+  "verification": "\u7B7E\u540D\u5339\u914D\u6240\u9009\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "checks": [
+    "verified public catalog",
+    "actual HTTPS Release download and SHA-256",
+    "verified cache reuse",
+    "archive identity and sizes",
+    "full imported file verification",
+    "duplicate import preserves component"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "public-download-and-import",
+  "hardware": false,
+  "sourceUrl": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/main/catalog/catalog.json",
+  "id": "arm.gnu",
+  "version": "1.0.2",
+  "compilerId": "arm-gnu-15.2.rel1",
+  "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+  "archiveSha256": "4BD8C464093145497F71527D12521FE4E4C8D4B199D9C67558B576D28E714B16",
+  "catalogSha256": "EB6A0FD6C54EC081D0F681A6C94D17F4D63C3E4C823646CE7AB4E024F58627A0",
+  "verification": "\u5DF2\u9A8C\u8BC1\u7EC4\u4EF6\u5E93 \u00B7 \u7B7E\u540D\u5339\u914D IDE \u5185\u7F6E\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "checks": [
+    "verified public catalog",
+    "actual HTTPS Release download and SHA-256",
+    "verified cache reuse",
+    "archive identity and sizes",
+    "full imported file verification",
+    "duplicate import preserves component"
+  ]
+}

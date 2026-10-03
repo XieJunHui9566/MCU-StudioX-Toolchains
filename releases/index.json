@@ -24,6 +24,9 @@
     },
     {
       "record": "releases/espressif.idf-6.0.3-win-x64.json"
+    },
+    {
+      "record": "releases/espressif.idf-6.1.0-win-x64.json"
     }
   ]
 }

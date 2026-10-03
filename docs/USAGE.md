@@ -4,7 +4,7 @@
 
 `https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/main/catalog/catalog.json`
 
-目前目录包含已公开发布的 `stc.sdcc/1.0.1`，约 55 MiB。原有 11 个组件及新增 ESP-IDF 5.5.5、6.0.3、6.1.0 仍在补齐发布材料，不列为可下载状态。已有完整安装包继续使用其预装版本，本地组件仍可导出为 `.mcutoolchain`。
+签名目录现有 9 个公开组件：ARM 1.0.2、RISC-V 1.0.2、PC MinGW 1.0.0、SDCC 1.0.1、Icarus Verilog 14.0.1，以及 ESP-IDF 5.5.4 / 5.5.5 / 6.0.3 / 6.1.0。具体大小、完整源码材料和验证记录见各版本 Release。AGM、WCH、ESP8266 和四个旧原组件仍为 `pending-materials`。完整版继续使用实际预装版本，不因目录更新自动升级。
 
 当前 IDE 开发构建提供两个模式，完整包与轻量包共用入口：
 
@@ -20,3 +20,5 @@
 也可从明确的已发布 Release 下载 `.mcutoolchain`，使用“工具 → 导入开发组件…”。导入前核对版本、编译器、归档摘要及来源；同身份不同内容拒绝覆盖。新版本并存，工程原锁定版本保持不变。损坏目录使用工具校验与修复。
 
 完整与轻量安装包都能导入组件。组件不修改系统 PATH，不安装全局 Python，不自动连接或烧录设备。
+
+从百度网盘等镜像取得 `.mcutoolchain` 时，选择手动导入即可，无需改名或解压。发布者应同时提供该组件的对应源码文件、`source-assets.json` 和 SHA-256 清单。网盘分享页不是直接归档下载地址，应通过浏览器下载后导入；手动模式不依赖 GitHub。

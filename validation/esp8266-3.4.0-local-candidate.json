@@ -1,0 +1,24 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "espressif.esp8266-rtos",
+  "version": "3.4.0",
+  "host": "win-x64",
+  "compilerId": "esp8266-rtos",
+  "manifestSha256": "25752689c4899c991ea461737efa1f4f6f00bab9d5b83ca91fc403c8943fa246",
+  "archiveSha256": "5D8E27D7F383F87AFAB49DF499BDC440524C2817C57EFCBBEADBABACD4446B55",
+  "downloadBytes": 172709742,
+  "installedBytes": 997825254,
+  "checks": [
+    "explicit supported component identity",
+    "full archive import preserves exact manifest and verifies every file",
+    "duplicate import verifies and preserves installed component",
+    "gcc-build succeeds with isolated environment",
+    "gcc creates real ELF with installed headers, compiler and linker",
+    "cmake-version succeeds with isolated environment",
+    "ninja-version succeeds with isolated environment"
+  ],
+  "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
+}
