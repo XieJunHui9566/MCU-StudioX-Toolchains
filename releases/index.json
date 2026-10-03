@@ -6,6 +6,9 @@
     },
     {
       "record": "releases/pc.mingw-1.0.0-win-x64.json"
+    },
+    {
+      "record": "releases/arm.gnu-1.0.2-win-x64.json"
     }
   ]
 }

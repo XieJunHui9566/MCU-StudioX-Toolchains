@@ -1,0 +1,144 @@
+{
+  "formatVersion": 1,
+  "id": "arm.gnu",
+  "version": "1.0.2",
+  "host": "win-x64",
+  "compilerId": "arm-gnu-15.2.rel1",
+  "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+  "tag": "arm.gnu-1.0.2-win-x64",
+  "asset": "arm.gnu-1.0.2-win-x64.mcutoolchain",
+  "sha256": "4BD8C464093145497F71527D12521FE4E4C8D4B199D9C67558B576D28E714B16",
+  "downloadBytes": 142368719,
+  "installedBytes": 1325223192,
+  "published": true,
+  "reviewEvidenceSha256": "60e8746d1f2f8223ce2fd20bcf65b3e8321acb1a1a6993faa2a9753dd4ee44d6",
+  "validation": {
+    "evidenceSha256": "7392ded04784a11b2bd7d18d8fc06e978ae0c6478650318d0b8318ceea3f1cb8",
+    "status": "passed",
+    "archiveSha256": "4BD8C464093145497F71527D12521FE4E4C8D4B199D9C67558B576D28E714B16",
+    "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+    "scope": "offline-build-and-import"
+  },
+  "sourceAssets": [
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/cmake-4.4.0.tar.gz",
+      "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+      "bytes": 13275398,
+      "file": "cmake-4.4.0.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/ninja-1.10.2.tar.gz",
+      "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+      "bytes": 213959,
+      "file": "ninja-1.10.2.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/qtbase-everywhere-src-6.10.1.tar.xz",
+      "sha256": "5a6226f7e23db51fdc3223121eba53f3f5447cf0cc4d6cb82a3a2df7a65d265d",
+      "bytes": 50234516,
+      "file": "qtbase-everywhere-src-6.10.1.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/xpack-openocd-0.12.0-7-build.tar.gz",
+      "sha256": "bd6d1cf7e71b4716f734f255623d6d2c7e55ee8f4fbc2c1afa1cd4cdb2ed7fb9",
+      "bytes": 1452241,
+      "file": "xpack-openocd-0.12.0-7-build.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/xbb-helper-v4.2.0.tar.gz",
+      "sha256": "745fa2645a51bf3b035417e7ddbf753d13df8d8aa2fe68b8dfb9785c5a6c3f26",
+      "bytes": 2166280,
+      "file": "xbb-helper-v4.2.0.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/openocd-e5888bda38f4952e2ae92f7dc5b25fc9a2d1c2b3.tar.gz",
+      "sha256": "3359e79abf309d98a0759071ea0e233818855300a8854e32434d66b7e31eedaa",
+      "bytes": 3409570,
+      "file": "openocd-e5888bda38f4952e2ae92f7dc5b25fc9a2d1c2b3.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz",
+      "sha256": "826639516ad21262b67f4e5b053d844c1fc1823815458ce9fbd7c19a9639551d",
+      "bytes": 4466344,
+      "file": "jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/libjaylink-0d23921a05d5d427332a142d154c213d0c306eb1.tar.gz",
+      "sha256": "cad704ea8e9995e47e8dfc5cf38ee30b10d85d3810aef5cf691379e4c908c6d2",
+      "bytes": 75218,
+      "file": "libjaylink-0d23921a05d5d427332a142d154c213d0c306eb1.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/libiconv-1.18.tar.gz",
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+      "bytes": 5822590,
+      "file": "libiconv-1.18.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/libftdi1-1.5.tar.bz2",
+      "sha256": "7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049",
+      "bytes": 116297,
+      "file": "libftdi1-1.5.tar.bz2"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/libusb-1.0.29.tar.bz2",
+      "sha256": "5977fc950f8d1395ccea9bd48c06b3f808fd3c2c961b44b0c2e6e29fc3a70a85",
+      "bytes": 645381,
+      "file": "libusb-1.0.29.tar.bz2"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/hidapi-0.15.0.tar.gz",
+      "sha256": "5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136",
+      "bytes": 363838,
+      "file": "hidapi-0.15.0.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/texinfo-7.2.tar.xz",
+      "sha256": "0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6",
+      "bytes": 6408432,
+      "file": "texinfo-7.2.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/autoconf-2.72.tar.xz",
+      "sha256": "ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a",
+      "bytes": 1389680,
+      "file": "autoconf-2.72.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/automake-1.16.5.tar.xz",
+      "sha256": "f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469",
+      "bytes": 1601740,
+      "file": "automake-1.16.5.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/libtool-2.4.7.tar.xz",
+      "sha256": "4f7f217f057ce655ff22559ad221a0fd8ef84ad1fc5fcb6990cecc333aa1635d",
+      "bytes": 1016040,
+      "file": "libtool-2.4.7.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/pkg-config-0.29.2.tar.gz",
+      "sha256": "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591",
+      "bytes": 2016830,
+      "file": "pkg-config-0.29.2.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/arm-gnu-toolchain-src-snapshot-15.2.rel1.tar.xz",
+      "sha256": "06f4e5792b566a771c300ac6f46c3422e23e34f4e3a5d44a8cb5594ead6fb82e",
+      "bytes": 358772144,
+      "file": "arm-gnu-toolchain-src-snapshot-15.2.rel1.tar.xz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/gnu-devtools-for-arm-67649ca70fdd3454f8965ee3a485066e64d875f4.tar.gz",
+      "sha256": "641c6abdd10e462a039255438bfe6a61578402356fbb985189909e64bef97781",
+      "bytes": 46649,
+      "file": "gnu-devtools-for-arm-67649ca70fdd3454f8965ee3a485066e64d875f4.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/arm.gnu-1.0.2-win-x64/arm.gnu-1.0.2-build-and-notices.zip",
+      "sha256": "636b1aaaabfe9418b7a362435eaf7447191958d14136788b1c3cd17a892fac13",
+      "bytes": 805593,
+      "file": "arm.gnu-1.0.2-build-and-notices.zip"
+    }
+  ]
+}
