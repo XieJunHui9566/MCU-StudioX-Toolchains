@@ -1,0 +1,29 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "espressif.idf",
+  "version": "6.0.3",
+  "host": "win-x64",
+  "compilerId": "esp-idf",
+  "manifestSha256": "39f22f8017c09d865bd367c76e10e58b3b9c3f2eed2d914960eae757f3d8f0bf",
+  "archiveSha256": "BE5D84D39F21838B3D75117753A64A2466988885C0969E6FB893E47D84F44D16",
+  "downloadBytes": 762844531,
+  "installedBytes": 6086461582,
+  "checks": [
+    "explicit supported component identity",
+    "full archive import preserves exact manifest and verifies every file",
+    "duplicate import verifies and preserves installed component",
+    "gcc-esp32-build succeeds with isolated environment",
+    "gcc-esp32 creates real ELF with installed headers, compiler and linker",
+    "gcc-esp32s3-build succeeds with isolated environment",
+    "gcc-esp32s3 creates real ELF with installed headers, compiler and linker",
+    "gcc-riscv-build succeeds with isolated environment",
+    "gcc-riscv creates real ELF with installed headers, compiler and linker",
+    "openocd-version succeeds with isolated environment",
+    "cmake-version succeeds with isolated environment",
+    "ninja-version succeeds with isolated environment"
+  ],
+  "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
+}

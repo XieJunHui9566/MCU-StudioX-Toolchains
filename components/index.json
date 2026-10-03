@@ -96,14 +96,14 @@
       "version": "6.0.3",
       "specification": "espressif.idf/6.0.3/component.json",
       "id": "espressif.idf",
-      "publicationStatus": "pending-materials"
+      "publicationStatus": "ready"
     },
     {
       "host": "win-x64",
       "version": "6.1.0",
       "specification": "espressif.idf/6.1.0/component.json",
       "id": "espressif.idf",
-      "publicationStatus": "pending-materials"
+      "publicationStatus": "ready"
     },
     {
       "id": "arm.gnu",
