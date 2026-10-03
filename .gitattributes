@@ -8,3 +8,5 @@ catalog/catalog.json -text
 catalog/catalog.json.sig -text
 reviews/*.json -text
 validation/*.json -text
+recipes/**/toolset.json -text
+recipes/**/overlays/** -text
