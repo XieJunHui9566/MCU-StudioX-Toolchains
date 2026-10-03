@@ -1,0 +1,82 @@
+{
+  "components": [
+    {
+      "id": "agm.agrv",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "agm.agrv/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "agm.logic",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "agm.logic/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "agm.pin-mapping",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "agm.pin-mapping/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "arm.gnu",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "arm.gnu/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "espressif.esp8266-rtos",
+      "version": "3.4.0",
+      "host": "win-x64",
+      "specification": "espressif.esp8266-rtos/3.4.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "espressif.idf",
+      "version": "5.5.4",
+      "host": "win-x64",
+      "specification": "espressif.idf/5.5.4/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "hdl.iverilog",
+      "version": "14.0.0",
+      "host": "win-x64",
+      "specification": "hdl.iverilog/14.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "pc.mingw",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "pc.mingw/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "riscv.xpack",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "riscv.xpack/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "stc.sdcc",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "stc.sdcc/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "wch.riscv",
+      "version": "1.0.0",
+      "host": "win-x64",
+      "specification": "wch.riscv/1.0.0/component.json",
+      "publicationStatus": "pending-materials"
+    }
+  ],
+  "formatVersion": 1
+}

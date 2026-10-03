@@ -1,0 +1,30 @@
+{
+  "formatVersion": 1,
+  "id": "espressif.esp8266-rtos",
+  "version": "3.4.0",
+  "host": "win-x64",
+  "compilerId": "esp8266-rtos",
+  "displayName": "Espressif ESP8266 RTOS SDK 3.4",
+  "manifestSha256": "25752689c4899c991ea461737efa1f4f6f00bab9d5b83ca91fc403c8943fa246",
+  "payloadFileCount": 23923,
+  "sourceUrls": [
+    "https://github.com/espressif/ESP8266_RTOS_SDK/releases/tag/v3.4",
+    "https://github.com/espressif/crosstool-NG"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}

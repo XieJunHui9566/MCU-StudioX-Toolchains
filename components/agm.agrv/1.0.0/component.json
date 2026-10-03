@@ -1,0 +1,32 @@
+{
+  "formatVersion": 1,
+  "id": "agm.agrv",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "agrv-gcc-11.1.0",
+  "displayName": "AG32 / AgRV",
+  "manifestSha256": "9f5861015e8a35fdd41b4b2d4931577983515ed55849c18ccbbaea9df1ea9886",
+  "payloadFileCount": 11576,
+  "sourceUrls": [
+    "https://www.ag32mcu.com/",
+    "https://gcc.gnu.org/",
+    "https://openocd.org/"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。",
+      "需要核实厂商修改和专有工具的再分发条款。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}

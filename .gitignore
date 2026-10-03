@@ -1,0 +1,11 @@
+artifacts/
+*.mcutoolchain
+*.studioxtools
+*.zip
+*.7z
+*.dpapi
+*.pfx
+*.key
+*.private.pem
+bin/
+obj/

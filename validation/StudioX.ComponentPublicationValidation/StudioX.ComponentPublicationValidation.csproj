@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="$(StudioXSourceDirectory)/src/StudioX.Application/StudioX.Application.csproj" /></ItemGroup>
+  <Target Name="RequireStudioXSource" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(StudioXSourceDirectory)' == ''" Text="Provide StudioXSourceDirectory with matching IDE source supporting development components." />
+  </Target>
+</Project>

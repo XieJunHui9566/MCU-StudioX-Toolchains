@@ -1,0 +1,8 @@
+* text=auto
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.json text eol=lf
+*.pem text eol=lf
+*.sig text eol=lf
+catalog/catalog.json -text
+catalog/catalog.json.sig -text

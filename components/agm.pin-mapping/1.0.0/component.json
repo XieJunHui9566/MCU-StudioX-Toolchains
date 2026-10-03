@@ -1,0 +1,31 @@
+{
+  "formatVersion": 1,
+  "id": "agm.pin-mapping",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "agm.ve",
+  "displayName": "AGM VE pin mapping / Supra",
+  "manifestSha256": "8fed7451e82ddbc7217769966c796c3fd455c67e3a148f76320c6ad64bdcd1d3",
+  "payloadFileCount": 727,
+  "sourceUrls": [
+    "https://www.ag32mcu.com/",
+    "https://www.alta-gate.com/"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。",
+      "需要核实厂商修改和专有工具的再分发条款。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}

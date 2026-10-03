@@ -1,0 +1,30 @@
+{
+  "formatVersion": 1,
+  "id": "stc.sdcc",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "sdcc-4.5.0-15242",
+  "displayName": "STC 8-bit / SDCC",
+  "manifestSha256": "07d1062dc7864122abdf909c49d314a445102f97dd7f9b866ac589a9d0f7d23d",
+  "payloadFileCount": 10512,
+  "sourceUrls": [
+    "https://sdcc.sourceforge.net/",
+    "https://sourceforge.net/projects/sdcc/files/sdcc/4.5.0/"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}

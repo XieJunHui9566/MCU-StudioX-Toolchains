@@ -1,0 +1,31 @@
+{
+  "formatVersion": 1,
+  "id": "wch.riscv",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "wch-gcc-12.2.0-v1.4",
+  "displayName": "沁恒 WCH RISC-V GCC",
+  "manifestSha256": "2e431cc20f61415f0f4baf6f0c95575fc68c7047af2bab3a780395f22b8e4cfd",
+  "payloadFileCount": 16895,
+  "sourceUrls": [
+    "https://www.mounriver.com/",
+    "https://github.com/openwch/ch32v307"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。",
+      "需要核实厂商修改和专有工具的再分发条款。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "publicKeyFile": "publisher.pem",
+  "algorithm": "RSA-PSS-SHA256",
+  "spkiSha256": "02f415bbe0abdf7ffaf456731187354593de93663a66f3dc4b48bf1be3e7e594",
+  "formatVersion": 1,
+  "keyBits": 3072
+}

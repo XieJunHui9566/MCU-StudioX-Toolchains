@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "publicBinaryReleased": false,
+  "id": "stc.sdcc",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "sdcc-4.5.0-15242",
+  "manifestSha256": "07d1062dc7864122abdf909c49d314a445102f97dd7f9b866ac589a9d0f7d23d",
+  "archiveSha256": "63e72bbdef24691e9917f9e80a514dfd537e89fa074a49a0058811fe0a87a1d4",
+  "archiveFiles": 10513,
+  "downloadBytes": 78208006,
+  "installedBytes": 265533613,
+  "firmwareSha256": "d19a41f19628d1f44bc1fc234417bfa1e64c4a7745675328283fb90be0066def",
+  "checks": [
+    "unapproved native package stays a local candidate and is absent from the public catalog",
+    "IDE distribution service verifies the real signed empty bootstrap catalog",
+    "IDE rejects a changed catalog with the original signature",
+    "IDE rejects a catalog when the selected publisher key differs",
+    "IDE preview reads the real candidate\u0027s immutable identity and archive hash",
+    "actual download and expanded sizes match the candidate receipt and GitHub asset limit",
+    "fresh candidate import fully verifies all installed files without changing the manifest",
+    "reimport completely verifies the same native component and skips replacement",
+    "native validation uses the explicitly selected SDCC component",
+    "imported SDCC really compiles and links a C51 program with stdint and division runtime support"
+  ]
+}

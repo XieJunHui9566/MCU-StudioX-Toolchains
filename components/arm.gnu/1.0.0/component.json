@@ -1,0 +1,30 @@
+{
+  "formatVersion": 1,
+  "id": "arm.gnu",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "arm-gnu-15.2.rel1",
+  "displayName": "Arm GNU Toolchain",
+  "manifestSha256": "b27c2aae8a177eefe10a7f6d59e330cffbedfab09d20d350731b68abe0e13339",
+  "payloadFileCount": 17275,
+  "sourceUrls": [
+    "https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads",
+    "https://github.com/xpack-dev-tools/openocd-xpack"
+  ],
+  "license": "NOASSERTION",
+  "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+  "publication": {
+    "status": "pending-materials",
+    "blockers": [
+      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+    ],
+    "sourceAssets": [],
+    "reviewEvidence": null
+  },
+  "validation": {
+    "scope": "identity-inventory",
+    "status": "recorded",
+    "hardware": false,
+    "notes": "身份和原始清单指纹来自现有本地发行组件；不代表已满足公开发布条件。"
+  }
+}
