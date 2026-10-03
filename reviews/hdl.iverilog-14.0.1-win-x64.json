@@ -1,0 +1,83 @@
+{
+  "formatVersion": 1,
+  "status": "approved",
+  "scope": "redistribution-materials-and-binary-inventory",
+  "id": "hdl.iverilog",
+  "version": "14.0.1",
+  "host": "win-x64",
+  "compilerId": "iverilog",
+  "manifestSha256": "ee6757a3cdf2e4d965c00ada9acca9212ef31e77df9e1f1d5aaca497c1f959d6",
+  "archiveSha256": "6EBC68EE948B613EEC3EA5599084E346294779A1736A0FA3B5D38EB27977BB6A",
+  "validationEvidenceSha256": "eb4b2955b796a61f3ddfb7a869d2f42345f8662472665e044d3a660faa932641",
+  "sourceAssets": [
+    {
+      "file": "gcc-13.1.0.tar.xz",
+      "bytes": 87451196,
+      "sha256": "61d684f0aa5e76ac6585ad8898a2427aade8979ed5e7f85492286c4dfc13ee86"
+    },
+    {
+      "file": "binutils-2.39.tar.xz",
+      "bytes": 25167756,
+      "sha256": "645c25f563b8adc0a81dbd6a41cffbf4d37083a382e02d5d3df4f65c09516d00"
+    },
+    {
+      "file": "gmp-6.2.1.tar.xz",
+      "bytes": 2027316,
+      "sha256": "fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2"
+    },
+    {
+      "file": "mpfr-4.1.0.tar.xz",
+      "bytes": 1525476,
+      "sha256": "0c98a3f1732ff6ca4ea690552079da9c597872d30e96ec28414ee23c95558a7f"
+    },
+    {
+      "file": "mpc-1.2.1.tar.gz",
+      "bytes": 838731,
+      "sha256": "17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459"
+    },
+    {
+      "file": "isl-0.25.tar.xz",
+      "bytes": 1977048,
+      "sha256": "be7b210647ccadf90a2f0b000fca11a4d40546374a850db67adb32fad4b230d9"
+    },
+    {
+      "file": "libiconv-1.17.tar.gz",
+      "bytes": 5413283,
+      "sha256": "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313"
+    },
+    {
+      "file": "zlib-1.2.13.tar.gz",
+      "bytes": 1556687,
+      "sha256": "1525952a0a567581792613a9723333d7f8cc20b87a81f920fb8bc7e3f2251428"
+    },
+    {
+      "file": "mingw-w64-v11.0.0.tar.gz",
+      "bytes": 13920612,
+      "sha256": "760fc2b908418060f5ccfdf9740ea9e6560f60b155d4ebb1608348fc56abf386"
+    },
+    {
+      "file": "mingw-builds-7ff96692a8032d893781523b311ac9b6cbbda0a1.tar.gz",
+      "bytes": 578807,
+      "sha256": "cb92e4c9df87cd3536a4f9318620a3153bae3de813207aded08a6747ba2d0fc1"
+    },
+    {
+      "file": "iverilog-2f296d88ae0d9af54fdf59d8bc0d91d7679edce3.tar.gz",
+      "bytes": 3300146,
+      "sha256": "9de7b73acdf7cbb2f20f629d28d913548d9544739294c0c040b1100a763c3078"
+    },
+    {
+      "file": "hdl.iverilog-14.0.1-build-and-notices.zip",
+      "bytes": 23276,
+      "sha256": "9b95965edff8897b66d3111b0b37821b53650dd40b0b026716bb77e3d8f66d11"
+    }
+  ],
+  "materials": [
+    "Fixed unmodified upstream Icarus source with retained GPL-2.0-or-later and build script supplied.",
+    "Exact GCC 13.1.0 / MinGW-w64 v11 / zlib 1.2.13 sources, host dependencies and compiler patches from verified pc.mingw/1.0.0 supplied.",
+    "Native imports contain only Windows system modules or included Icarus modules; no unknown runtime DLLs shipped."
+  ],
+  "limitations": [
+    "Offline Verilog compilation and real software simulation only.",
+    "Readline is not enabled. No bit-identical source rebuild or hardware acceptance claim."
+  ]
+}

@@ -122,6 +122,15 @@
       "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
       "publicationStatus": "ready",
       "specification": "riscv.xpack/1.0.2/component.json"
+    },
+    {
+      "id": "hdl.iverilog",
+      "version": "14.0.1",
+      "host": "win-x64",
+      "compilerId": "iverilog",
+      "manifestSha256": "ee6757a3cdf2e4d965c00ada9acca9212ef31e77df9e1f1d5aaca497c1f959d6",
+      "publicationStatus": "ready",
+      "specification": "hdl.iverilog/14.0.1/component.json"
     }
   ],
   "formatVersion": 1

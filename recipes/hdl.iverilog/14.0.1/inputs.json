@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "manifestSha256": "ee6757a3cdf2e4d965c00ada9acca9212ef31e77df9e1f1d5aaca497c1f959d6",
+  "sourceCommit": "2f296d88ae0d9af54fdf59d8bc0d91d7679edce3",
+  "sourceArchive": {
+    "file": "iverilog-2f296d88ae0d9af54fdf59d8bc0d91d7679edce3.tar.gz",
+    "bytes": 3300146,
+    "sha256": "9de7b73acdf7cbb2f20f629d28d913548d9544739294c0c040b1100a763c3078"
+  },
+  "compilerInput": {
+    "file": "x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1.7z",
+    "bytes": 72272615,
+    "sha256": "e2c4de78e48be8db170fc6d4ccc9195eb913790fbce880da476532ad0bb66ae9",
+    "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.1.0-rt_v11-rev1/x86_64-13.1.0-release-win32-seh-msvcrt-rt_v11-rev1.7z"
+  },
+  "compilerBuildCommit": "7ff96692a8032d893781523b311ac9b6cbbda0a1",
+  "compilerPatches": [
+    "libiconv/0002-fix-cr-for-awk-in-configure.all.patch",
+    "libiconv/fix-pointer-buf.patch",
+    "zlib/01-zlib-1.2.13-buildsys.mingw.patch",
+    "zlib/03-dont-put-sodir-into-L.mingw.patch",
+    "zlib/04-fix-largefile-support.patch",
+    "isl/isl-0.14.1-no-undefined.patch",
+    "binutils/0001-enable-gold-on.mingw32.patch",
+    "binutils/0002-check-for-unusual-file-harder.patch",
+    "binutils/0008-fix-libiberty-makefile.mingw.patch",
+    "binutils/0009-fix-libiberty-configure.mingw.patch",
+    "binutils/0022-libiberty-missing-typedef.patch",
+    "binutils/0110-binutils-mingw-gnu-print.patch",
+    "gcc/gcc-5.1-iconv.patch",
+    "gcc/gcc-4.8-libstdc++export.patch",
+    "gcc/gcc-12-fix-for-windows-not-minding-non-existant-parent-dirs.patch",
+    "gcc/gcc-5.1.0-make-xmmintrin-header-cplusplus-compatible.patch",
+    "gcc/gcc-5-dwarf-regression.patch",
+    "gcc/gcc-12-ktietz-libgomp.patch",
+    "gcc/gcc-libgomp-ftime64.patch",
+    "gcc/0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+    "gcc/gcc-10-libgcc-ldflags.patch",
+    "gcc/gcc-12-replace-abort-with-fancy_abort.patch"
+  ],
+  "configureArguments": [
+    "--host=x86_64-w64-mingw32",
+    "LDFLAGS=-static-libgcc -static-libstdc++"
+  ],
+  "buildPrerequisites": {
+    "make": "4.4.1",
+    "autoconf": "2.73",
+    "bison": "3.8.2",
+    "flex": "2.6.4",
+    "gperf": "3.3"
+  }
+}
