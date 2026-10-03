@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "id": "stc.sdcc",
+  "version": "1.0.1",
+  "host": "win-x64",
+  "compilerId": "sdcc-4.5.0-15242",
+  "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+  "tag": "stc.sdcc-1.0.1-win-x64",
+  "asset": "stc.sdcc-1.0.1-win-x64.mcutoolchain",
+  "sha256": "b4c1755eb5fa5bf2f77fac7d46e373b4ecc33a72d33f6427ffc98a329fe0176f",
+  "downloadBytes": 57622699,
+  "installedBytes": 215720767,
+  "published": true,
+  "reviewEvidenceSha256": "344182d0693834e897f3a9fde5e1cbf1ec85ff5551e79936e942f029af11b8e3",
+  "validation": {
+    "evidenceSha256": "a4c1280e614ac5b3377987ccd18128e877500448132b2079a4e617251d11a10e",
+    "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+    "scope": "offline-build-and-import",
+    "status": "passed",
+    "archiveSha256": "b4c1755eb5fa5bf2f77fac7d46e373b4ecc33a72d33f6427ffc98a329fe0176f"
+  },
+  "sourceAssets": [
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/stc.sdcc-1.0.1-win-x64/cmake-4.4.0.tar.gz",
+      "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+      "bytes": 13275398,
+      "file": "cmake-4.4.0.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/stc.sdcc-1.0.1-win-x64/ninja-1.10.2.tar.gz",
+      "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+      "bytes": 213959,
+      "file": "ninja-1.10.2.tar.gz"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/stc.sdcc-1.0.1-win-x64/sdcc-src-4.5.0.tar.bz2",
+      "sha256": "d5030437fb436bb1d93a8dbdbfb46baaa60613318f4fb3f5871d72815d1eed80",
+      "bytes": 20298103,
+      "file": "sdcc-src-4.5.0.tar.bz2"
+    },
+    {
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/stc.sdcc-1.0.1-win-x64/stc.sdcc-1.0.1-build-and-notices.zip",
+      "sha256": "423936773f7ccf19c6c27b001dfdc9367ac5279b21b73348e7d14a281d52a987",
+      "bytes": 21298,
+      "file": "stc.sdcc-1.0.1-build-and-notices.zip"
+    }
+  ]
+}

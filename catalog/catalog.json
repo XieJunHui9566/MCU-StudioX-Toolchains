@@ -1,5 +1,21 @@
 {
   "formatVersion": 1,
   "publisher": "XieJunHui9566/MCU-StudioX-Toolchains",
-  "entries": []
+  "entries": [
+    {
+      "kind": "tool",
+      "id": "stc.sdcc",
+      "version": "1.0.1",
+      "name": "STC 8-bit / SDCC",
+      "archive": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/stc.sdcc-1.0.1-win-x64/stc.sdcc-1.0.1-win-x64.mcutoolchain",
+      "sha256": "b4c1755eb5fa5bf2f77fac7d46e373b4ecc33a72d33f6427ffc98a329fe0176f",
+      "downloadBytes": 57622699,
+      "installedBytes": 215720767,
+      "license": "SDCC: GPL-2.0-or-later / GPL-3.0-or-later with runtime exceptions; CMake: BSD-3-Clause and bundled permissive notices; Ninja: Apache-2.0; see per-file source and notices",
+      "sourceUrl": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/tree/main/components/stc.sdcc/1.0.1",
+      "releaseNotes": "官方 SDCC 4.5.0 / CMake 4.4.0 命令行 / Ninja 1.10.2。编译器不变，组件内容以新版本并存；不包含本机厂商头文件、备份、调试器、模拟器或 CMake GUI。旧工程继续锁定原组件；新器件包或显式版本切换后才使用 1.0.1。",
+      "pluginApi": 0,
+      "frameworks": []
+    }
+  ]
 }

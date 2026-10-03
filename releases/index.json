@@ -1,4 +1,6 @@
 {
-  "releases": [],
-  "formatVersion": 1
+  "formatVersion": 1,
+  "releases": [
+    { "record": "releases/stc.sdcc-1.0.1-win-x64.json" }
+  ]
 }
