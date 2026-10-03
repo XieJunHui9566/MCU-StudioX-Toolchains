@@ -9,6 +9,9 @@
     },
     {
       "record": "releases/arm.gnu-1.0.2-win-x64.json"
+    },
+    {
+      "record": "releases/riscv.xpack-1.0.2-win-x64.json"
     }
   ]
 }

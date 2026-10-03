@@ -1,0 +1,318 @@
+{
+  "formatVersion": 1,
+  "id": "riscv.xpack",
+  "version": "1.0.2",
+  "host": "win-x64",
+  "compilerId": "xpack-riscv-gcc-15.2.0",
+  "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+  "tag": "riscv.xpack-1.0.2-win-x64",
+  "asset": "riscv.xpack-1.0.2-win-x64.mcutoolchain",
+  "sha256": "D10A8E1559F2D48BB9EE1E3AAF86B4185807269F40862F6CEE7D5F22DD37E25A",
+  "downloadBytes": 231404428,
+  "installedBytes": 1960204472,
+  "published": true,
+  "reviewEvidenceSha256": "21e37167c376190ba064f850ad5554d40135bdfc1c6c39a1d2cc801aae49f1c7",
+  "validation": {
+    "scope": "offline-build-and-import",
+    "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+    "evidenceSha256": "4c1af26ccc7cdc84d92ce4570dd352e60b01193f30ef44c5aa7323c95e3f67af",
+    "archiveSha256": "D10A8E1559F2D48BB9EE1E3AAF86B4185807269F40862F6CEE7D5F22DD37E25A",
+    "status": "passed"
+  },
+  "sourceAssets": [
+    {
+      "file": "cmake-4.4.0.tar.gz",
+      "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cmake-4.4.0.tar.gz",
+      "bytes": 13275398
+    },
+    {
+      "file": "ninja-1.10.2.tar.gz",
+      "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/ninja-1.10.2.tar.gz",
+      "bytes": 213959
+    },
+    {
+      "file": "qtbase-everywhere-src-6.10.1.tar.xz",
+      "sha256": "5a6226f7e23db51fdc3223121eba53f3f5447cf0cc4d6cb82a3a2df7a65d265d",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/qtbase-everywhere-src-6.10.1.tar.xz",
+      "bytes": 50234516
+    },
+    {
+      "file": "xpack-openocd-0.12.0-7-build.tar.gz",
+      "sha256": "bd6d1cf7e71b4716f734f255623d6d2c7e55ee8f4fbc2c1afa1cd4cdb2ed7fb9",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xpack-openocd-0.12.0-7-build.tar.gz",
+      "bytes": 1452241
+    },
+    {
+      "file": "xbb-helper-v4.2.0.tar.gz",
+      "sha256": "745fa2645a51bf3b035417e7ddbf753d13df8d8aa2fe68b8dfb9785c5a6c3f26",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xbb-helper-v4.2.0.tar.gz",
+      "bytes": 2166280
+    },
+    {
+      "file": "openocd-e5888bda38f4952e2ae92f7dc5b25fc9a2d1c2b3.tar.gz",
+      "sha256": "3359e79abf309d98a0759071ea0e233818855300a8854e32434d66b7e31eedaa",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/openocd-e5888bda38f4952e2ae92f7dc5b25fc9a2d1c2b3.tar.gz",
+      "bytes": 3409570
+    },
+    {
+      "file": "jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz",
+      "sha256": "826639516ad21262b67f4e5b053d844c1fc1823815458ce9fbd7c19a9639551d",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz",
+      "bytes": 4466344
+    },
+    {
+      "file": "libjaylink-0d23921a05d5d427332a142d154c213d0c306eb1.tar.gz",
+      "sha256": "cad704ea8e9995e47e8dfc5cf38ee30b10d85d3810aef5cf691379e4c908c6d2",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libjaylink-0d23921a05d5d427332a142d154c213d0c306eb1.tar.gz",
+      "bytes": 75218
+    },
+    {
+      "file": "libiconv-1.18.tar.gz",
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libiconv-1.18.tar.gz",
+      "bytes": 5822590
+    },
+    {
+      "file": "libftdi1-1.5.tar.bz2",
+      "sha256": "7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libftdi1-1.5.tar.bz2",
+      "bytes": 116297
+    },
+    {
+      "file": "libusb-1.0.29.tar.bz2",
+      "sha256": "5977fc950f8d1395ccea9bd48c06b3f808fd3c2c961b44b0c2e6e29fc3a70a85",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libusb-1.0.29.tar.bz2",
+      "bytes": 645381
+    },
+    {
+      "file": "hidapi-0.15.0.tar.gz",
+      "sha256": "5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/hidapi-0.15.0.tar.gz",
+      "bytes": 363838
+    },
+    {
+      "file": "texinfo-7.2.tar.xz",
+      "sha256": "0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/texinfo-7.2.tar.xz",
+      "bytes": 6408432
+    },
+    {
+      "file": "autoconf-2.72.tar.xz",
+      "sha256": "ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/autoconf-2.72.tar.xz",
+      "bytes": 1389680
+    },
+    {
+      "file": "automake-1.16.5.tar.xz",
+      "sha256": "f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/automake-1.16.5.tar.xz",
+      "bytes": 1601740
+    },
+    {
+      "file": "libtool-2.4.7.tar.xz",
+      "sha256": "4f7f217f057ce655ff22559ad221a0fd8ef84ad1fc5fcb6990cecc333aa1635d",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libtool-2.4.7.tar.xz",
+      "bytes": 1016040
+    },
+    {
+      "file": "pkg-config-0.29.2.tar.gz",
+      "sha256": "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/pkg-config-0.29.2.tar.gz",
+      "bytes": 2016830
+    },
+    {
+      "file": "xpack-riscv-15.2.0-1-build.tar.gz",
+      "sha256": "b52fa99bae37b733c6f684f5443d0ea1d49aa2dc00e1fd45cd52dc393424a495",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xpack-riscv-15.2.0-1-build.tar.gz",
+      "bytes": 1521574
+    },
+    {
+      "file": "xbb-helper-v4.3.15.tar.gz",
+      "sha256": "3f559de79464f54485ddc2bb90077a0fb28ef650b1eeb72519c193261e395d99",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xbb-helper-v4.3.15.tar.gz",
+      "bytes": 2170944
+    },
+    {
+      "file": "xpack-mingw-15.2.0-1-build.tar.gz",
+      "sha256": "159b4f19224453beb8e32bfb72659c4b7e12f1cab75c2c9ef356570b1f235c03",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xpack-mingw-15.2.0-1-build.tar.gz",
+      "bytes": 1211479
+    },
+    {
+      "file": "mingw-w64-v13.0.0.tar.gz",
+      "sha256": "1a910473313a329316025fa4563160deae378884e4b8ee573d1d03ac006b2e61",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/mingw-w64-v13.0.0.tar.gz",
+      "bytes": 15256061
+    },
+    {
+      "file": "gcc-15.2.0.tar.xz",
+      "sha256": "438fd996826b0c82485a29da03a72d71d6e3541a83ec702df4271f6fe025d24e",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/gcc-15.2.0.tar.xz",
+      "bytes": 101056276
+    },
+    {
+      "file": "binutils-2.45.tar.xz",
+      "sha256": "c50c0e7f9cb188980e2cc97e4537626b1672441815587f1eab69d2a1bfbef5d2",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/binutils-2.45.tar.xz",
+      "bytes": 27868232
+    },
+    {
+      "file": "newlib-4.5.0.20241231.tar.gz",
+      "sha256": "b4d79d68593090ffa08d6a01d2ae2a0ff8dbe5c041a3390dadbc80c17b53e865",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/newlib-4.5.0.20241231.tar.gz",
+      "bytes": 7275064
+    },
+    {
+      "file": "gdb-16.3.tar.xz",
+      "sha256": "bcfcd095528a987917acf9fff3f1672181694926cc18d609c99d0042c00224c5",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/gdb-16.3.tar.xz",
+      "bytes": 24434444
+    },
+    {
+      "file": "Python-3.13.7.tar.xz",
+      "sha256": "5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/Python-3.13.7.tar.xz",
+      "bytes": 22769492
+    },
+    {
+      "file": "gmp-6.3.0.tar.xz",
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/gmp-6.3.0.tar.xz",
+      "bytes": 2094196
+    },
+    {
+      "file": "mpfr-4.2.2.tar.xz",
+      "sha256": "b67ba0383ef7e8a8563734e2e889ef5ec3c3b898a01d00fa0a6869ad81c6ce01",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/mpfr-4.2.2.tar.xz",
+      "bytes": 1505596
+    },
+    {
+      "file": "mpc-1.3.1.tar.gz",
+      "sha256": "ab642492f5cf882b74aa0cb730cd410a81edcdbec895183ce930e706c1c759b8",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/mpc-1.3.1.tar.gz",
+      "bytes": 773573
+    },
+    {
+      "file": "isl-0.27.tar.xz",
+      "sha256": "6d8babb59e7b672e8cb7870e874f3f7b813b6e00e6af3f8b04f7579965643d5c",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/isl-0.27.tar.xz",
+      "bytes": 2056436
+    },
+    {
+      "file": "libiconv-1.17.tar.gz",
+      "sha256": "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libiconv-1.17.tar.gz",
+      "bytes": 5413283
+    },
+    {
+      "file": "xz-5.8.1.tar.xz",
+      "sha256": "0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/xz-5.8.1.tar.xz",
+      "bytes": 1461872
+    },
+    {
+      "file": "zstd-1.5.7.tar.gz",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/zstd-1.5.7.tar.gz",
+      "bytes": 2434947
+    },
+    {
+      "file": "zlib-1.3.1.tar.gz",
+      "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/zlib-1.3.1.tar.gz",
+      "bytes": 1572744
+    },
+    {
+      "file": "ncurses-6.5.tar.gz",
+      "sha256": "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/ncurses-6.5.tar.gz",
+      "bytes": 3688489
+    },
+    {
+      "file": "readline-8.3.tar.gz",
+      "sha256": "fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/readline-8.3.tar.gz",
+      "bytes": 3419642
+    },
+    {
+      "file": "expat-2.7.3.tar.xz",
+      "sha256": "71df8f40706a7bb0a80a5367079ea75d91da4f8c65c58ec59bcdfbf7decdab9f",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/expat-2.7.3.tar.xz",
+      "bytes": 504744
+    },
+    {
+      "file": "libunistring-1.4.1.tar.xz",
+      "sha256": "67d88430892527861903788868c77802a217b0959990f7449f2976126a307763",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/libunistring-1.4.1.tar.xz",
+      "bytes": 2769164
+    },
+    {
+      "file": "gettext-0.25.tar.xz",
+      "sha256": "05240b29f5b0f422e5a4ef8e9b5f76d8fa059cc057693d2723cdb76f36a88ab0",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/gettext-0.25.tar.xz",
+      "bytes": 9932992
+    },
+    {
+      "file": "cpython-source-deps-bzip2-1.0.8.tar.gz",
+      "sha256": "ab8d1b0cc087c20d4c32c0e4fcf7d0c733a95da12cedc6d63b3f0a9af07427e2",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-bzip2-1.0.8.tar.gz",
+      "bytes": 818771
+    },
+    {
+      "file": "cpython-source-deps-libffi-3.4.4.tar.gz",
+      "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-libffi-3.4.4.tar.gz",
+      "bytes": 1375889
+    },
+    {
+      "file": "cpython-source-deps-openssl-3.0.16.tar.gz",
+      "sha256": "6bb739ecddbd2cfb6d255eb5898437a9b5739277dee931338d3275bac5d96ba2",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-openssl-3.0.16.tar.gz",
+      "bytes": 15487961
+    },
+    {
+      "file": "cpython-source-deps-mpdecimal-4.0.0.tar.gz",
+      "sha256": "338fac3fb8cdd60f406b6326431338756f58a8af94229ffd9bf1e7c2b1ad71ca",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-mpdecimal-4.0.0.tar.gz",
+      "bytes": 319629
+    },
+    {
+      "file": "cpython-source-deps-sqlite-3.50.4.0.tar.gz",
+      "sha256": "fb5ab81f27612b0a7b4861ba655906c76dc85ee969e7a4905d2075aff931e8d0",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-sqlite-3.50.4.0.tar.gz",
+      "bytes": 2845090
+    },
+    {
+      "file": "cpython-source-deps-tcl-core-8.6.15.0.tar.gz",
+      "sha256": "4c23f0dd3efcbe6f3a22c503a68d147617bb30c4f5290f1eb3eaacf0b460440b",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-tcl-core-8.6.15.0.tar.gz",
+      "bytes": 11889733
+    },
+    {
+      "file": "cpython-source-deps-tk-8.6.15.0.tar.gz",
+      "sha256": "0ae56d39bca92865f338529557a1e56d110594184b6dc5a91339c5675751e264",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-tk-8.6.15.0.tar.gz",
+      "bytes": 4629677
+    },
+    {
+      "file": "cpython-source-deps-xz-5.2.5.tar.gz",
+      "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-xz-5.2.5.tar.gz",
+      "bytes": 1744796
+    },
+    {
+      "file": "cpython-source-deps-zlib-1.3.1.tar.gz",
+      "sha256": "e3f3fb32564952006eb18b091ca8464740e5eca29d328cfb0b2da22768e0b638",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/cpython-source-deps-zlib-1.3.1.tar.gz",
+      "bytes": 1570732
+    },
+    {
+      "file": "riscv.xpack-1.0.2-build-and-notices.zip",
+      "sha256": "09092924a932842e006dedb1d53b2d91d5247d6366c8aca6111a68ce76b1f5db",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/riscv.xpack-1.0.2-win-x64/riscv.xpack-1.0.2-build-and-notices.zip",
+      "bytes": 695684
+    }
+  ]
+}
