@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "version": "5.5.4",
+  "target": "esp32s3",
+  "status": "passed",
+  "scope": "offline-full-ESP-IDF-SDK-build-no-hardware",
+  "exitCode": 0,
+  "seconds": 63.78,
+  "firmwareBytes": 189808,
+  "firmwareSha256": "8096707a98543d77a96e670840f8f9552f157426105ba67b5ce917ae6b4385b7"
+}
