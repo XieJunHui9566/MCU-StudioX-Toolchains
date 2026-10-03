@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "public-download-and-import",
+  "hardware": false,
+  "sourceUrl": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/850a6c9783d58da1d4671a4ff4be7efb03d6a705/catalog/catalog.json",
+  "id": "espressif.idf",
+  "version": "5.5.4",
+  "compilerId": "esp-idf",
+  "manifestSha256": "b0336730d0edce3cfa87fcdf4039b5cb8ae5ee2298a3df32f527a70046b0d08f",
+  "archiveSha256": "064695B0C824CEF4D7AB7ED14E9AF8BAD197ED09C27CEF0B92FAE762BB9852AC",
+  "catalogSha256": "08D0E1D04D1E7775AA5E6473765537E228847C28A9D91C14EC93F12E06F78799",
+  "verification": "\u7B7E\u540D\u5339\u914D\u6240\u9009\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "checks": [
+    "verified public catalog",
+    "actual HTTPS Release download and SHA-256",
+    "verified cache reuse",
+    "archive identity and sizes",
+    "full imported file verification",
+    "duplicate import preserves component"
+  ]
+}

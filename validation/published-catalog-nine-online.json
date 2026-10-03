@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "network": true,
+  "hardware": false,
+  "source": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/main/catalog/catalog.json",
+  "catalogSha256": "9C7991D3300909EBF21F39CA569BEAD356555DA7249567DB964E3FDAC1614EDD",
+  "verification": "\u5DF2\u9A8C\u8BC1\u7EC4\u4EF6\u5E93 \u00B7 \u7B7E\u540D\u5339\u914D IDE \u5185\u7F6E\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "entries": 9
+}
