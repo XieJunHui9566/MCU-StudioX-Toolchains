@@ -16,7 +16,8 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+      "本地 SDCC 安装目录包含不属于官方发行件的 STC 厂商头文件及两套备份，需另行核实其许可；旧版本原始内容不得通过重新打包改变。",
+      "旧版本附带的独立 GCC/Readline DLL 与 Ninja 发行变体仍缺少完整的来源与材料；发布使用来源清楚的 1.0.1，并保留旧工程锁定。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null

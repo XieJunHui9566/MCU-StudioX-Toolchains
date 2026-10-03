@@ -76,6 +76,13 @@
       "host": "win-x64",
       "specification": "wch.riscv/1.0.0/component.json",
       "publicationStatus": "pending-materials"
+    },
+    {
+      "version": "1.0.1",
+      "publicationStatus": "ready",
+      "id": "stc.sdcc",
+      "specification": "stc.sdcc/1.0.1/component.json",
+      "host": "win-x64"
     }
   ],
   "formatVersion": 1

@@ -4,7 +4,7 @@ MCU StudioX 的独立开发组件仓库，覆盖 MCU、HDL 和 Windows PC 开发
 
 ## 当前状态
 
-已登记现有 11 个组件的精确 ID、版本、平台、编译器和原始 `toolset.json` 指纹。**当前均为 `pending-materials`，尚无公开二进制 Release，下载目录为空。** 正在补齐对应源码、构建脚本、依赖材料和厂商再分发条款。本地打包或通过编译不自动代表满足公开发布条件。
+已登记原有 11 个组件的精确身份和清单指纹，它们仍为 `pending-materials`。新增 `stc.sdcc/1.0.1` 从官方发行归档组装，已补齐源码和通知，并通过完整导入及 C51/CMake/Ninja 构建验证，准备独立发布。目录只在核对真实公开 Release 之后收录该版本。
 
 - [组件登记](components/index.json)：待发布组件与不可改变的身份。
 - [签名下载目录](catalog/catalog.json)：只收录已审阅、验证并公开发布的组件。

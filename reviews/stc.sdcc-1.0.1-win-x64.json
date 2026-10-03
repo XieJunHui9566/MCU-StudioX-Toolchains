@@ -1,0 +1,55 @@
+{
+  "formatVersion": 1,
+  "status": "approved",
+  "scope": "redistribution-materials-and-binary-inventory",
+  "id": "stc.sdcc",
+  "version": "1.0.1",
+  "host": "win-x64",
+  "compilerId": "sdcc-4.5.0-15242",
+  "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+  "archiveSha256": "b4c1755eb5fa5bf2f77fac7d46e373b4ecc33a72d33f6427ffc98a329fe0176f",
+  "sourceAssets": [
+    {
+      "file": "cmake-4.4.0.tar.gz",
+      "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+      "bytes": 13275398
+    },
+    {
+      "file": "ninja-1.10.2.tar.gz",
+      "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+      "bytes": 213959
+    },
+    {
+      "file": "sdcc-src-4.5.0.tar.bz2",
+      "sha256": "d5030437fb436bb1d93a8dbdbfb46baaa60613318f4fb3f5871d72815d1eed80",
+      "bytes": 20298103
+    },
+    {
+      "file": "stc.sdcc-1.0.1-build-and-notices.zip",
+      "sha256": "423936773f7ccf19c6c27b001dfdc9367ac5279b21b73348e7d14a281d52a987",
+      "bytes": 21298
+    }
+  ],
+  "officialSdccInstallerSha256": "f459effe986f4c09f0efa64877a753d44d3b78355c36b5055854a032f543aec5",
+  "sourceEvidence": {
+    "cmake": "https://github.com/Kitware/CMake/releases/tag/v4.4.0",
+    "gccRuntimeException": "https://gcc.gnu.org/onlinedocs/libstdc++/manual/license.html",
+    "sdcc": "https://sourceforge.net/projects/sdcc/files/sdcc/4.5.0/sdcc-src-4.5.0.tar.bz2/download",
+    "ninja": "https://github.com/ninja-build/ninja/releases/tag/v1.10.2"
+  },
+  "materials": [
+    "Matching SDCC, CMake and Ninja source archives are delivered as Release assets, including build scripts and retained per-file licenses.",
+    "Selected executable bytes are unchanged from the pinned official binary archives.",
+    "No local STC headers or backup directories, non-free PIC tree, CMake Qt GUI, SDCC debugger/simulator or standalone third-party DLLs are included.",
+    "The 11 selected SDCC PE executables, including cc1, import only Windows platform DLLs.",
+    "Static GCC runtime attribution and Runtime Library Exception are retained; SDCC, preprocessor and binutils corresponding source remains required and is delivered.",
+    "Original CMake bundled dependency notices are retained; additional Boost, MinGW-w64 and Ninja notices are delivered in both component and source supplement."
+  ],
+  "limitations": [
+    "Validation is offline import and MCS-51 build only; no hardware, flashing or debugging approval.",
+    "Recipe reproduces component assembly; no claim of bit-identical upstream source recompilation.",
+    "Supplemental MinGW-w64 attribution collection is not proof of the exact upstream build environment.",
+    "Old 1.0.0 component bytes and project locks are unchanged."
+  ],
+  "validationEvidenceSha256": "a4c1280e614ac5b3377987ccd18128e877500448132b2079a4e617251d11a10e"
+}

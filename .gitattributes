@@ -6,3 +6,5 @@
 *.sig text eol=lf
 catalog/catalog.json -text
 catalog/catalog.json.sig -text
+reviews/*.json -text
+validation/*.json -text

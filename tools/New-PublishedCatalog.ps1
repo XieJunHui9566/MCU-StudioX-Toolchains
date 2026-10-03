@@ -1,5 +1,5 @@
 param([Parameter(Mandatory)][string]$EncryptedKeyFile,[Parameter(Mandatory)][string]$OutputDirectory,
-    [string]$Repository='XieJunHui9566/MCU-StudioX-Toolchains',[switch]$AllowEmptyBootstrap)
+    [string]$Repository='XieJunHui9566/MCU-StudioX-Toolchains',[switch]$AllowEmptyBootstrap,[string]$GitHubExecutable='gh')
 $ErrorActionPreference='Stop'
 . (Join-Path $PSScriptRoot 'Repository-Common.ps1')
 $root=Split-Path -Parent $PSScriptRoot
@@ -17,7 +17,7 @@ foreach($record in $index.releases){
     $review=Resolve-RepositoryFile $root $spec.publication.reviewEvidence.file
     if((Get-FileHash -LiteralPath $review).Hash -ne $spec.publication.reviewEvidence.sha256){throw 'Redistribution review record changed.'}
     # 非空正式目录核对 GitHub 已公开资产的摘要；不能把本地候选或草稿下载地址写成可用组件。
-    $remoteText=& gh api ('repos/'+$Repository+'/releases/tags/'+$release.tag)
+    $remoteText=& $GitHubExecutable api ('repos/'+$Repository+'/releases/tags/'+$release.tag)
     if($LASTEXITCODE -ne 0){throw 'Published component release cannot be verified.'}
     $remote=$remoteText|ConvertFrom-Json
     if($remote.draft -or $remote.tag_name -cne $release.tag){throw 'Component release is unpublished or has a different tag.'}

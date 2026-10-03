@@ -28,14 +28,27 @@ try{
 }finally{$rsa.Dispose()}
 $catalog=Get-Content -LiteralPath (Join-Path $root 'catalog/catalog.json') -Raw|ConvertFrom-Json
 $releases=Get-Content -LiteralPath (Join-Path $root 'releases/index.json') -Raw|ConvertFrom-Json
-Check ($catalog.formatVersion -eq 1 -and $catalog.entries.Count -eq $releases.releases.Count) 'bootstrap directory contains no unpublished or pending component'
+Check ($catalog.formatVersion -eq 1 -and $catalog.entries.Count -eq $releases.releases.Count) 'signed directory count matches the published Release registry'
+$releaseSeen=[Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+foreach($reference in $releases.releases){
+    $release=Get-Content -LiteralPath (Resolve-RepositoryFile $root $reference.record) -Raw|ConvertFrom-Json
+    $spec=Read-ComponentSpec (Resolve-RepositoryFile $root ('components/'+$release.id+'/'+$release.version+'/component.json'))
+    $expected=Get-PublishedCatalogEntry $spec $release 'XieJunHui9566/MCU-StudioX-Toolchains'
+    $actual=@($catalog.entries|Where-Object {$_.kind -ceq 'tool' -and $_.id -ceq $spec.id -and $_.version -ceq $spec.version})
+    Check ($releaseSeen.Add($spec.id+'/'+$spec.version) -and $actual.Count -eq 1) 'each published component has one signed directory entry'
+    foreach($property in $expected.Keys){
+        if(($expected[$property]|ConvertTo-Json -Depth 8 -Compress) -cne ($actual[0].$property|ConvertTo-Json -Depth 8 -Compress)){throw "Signed catalog differs from reviewed Release: $property"}
+    }
+    $reviewPath=Resolve-RepositoryFile $root $spec.publication.reviewEvidence.file
+    Check ((Get-FileHash -LiteralPath $reviewPath).Hash -eq $spec.publication.reviewEvidence.sha256) 'published review bytes match the component and Release fingerprints'
+}
 foreach($file in Get-ChildItem -LiteralPath $root -File -Recurse -Force|Where-Object {$_.FullName -notlike ($root+'\.git\*')}){
     if($file.Extension -in @('.exe','.dll','.zip','.mcutoolchain','.studioxtools','.dpapi','.pfx','.key')){throw 'Binary or private-key file entered the public repository.'}
     $text=[IO.File]::ReadAllText($file.FullName)
     if($text -match '-----BEGIN (?:RSA )?PRIVATE KEY-----' -or $text -match '(?i)[A-Z]:[\\/]Users[\\/]'){throw 'Secret material or developer account path entered the public repository.'}
 }
 $checks.Add('repository contains no binary payload, private signing key or developer account path')
-foreach($script in Get-ChildItem -LiteralPath $PSScriptRoot -Filter '*.ps1'){$tokens=$null;$errors=$null;[Management.Automation.Language.Parser]::ParseFile($script.FullName,[ref]$tokens,[ref]$errors)|Out-Null;if($errors.Count){throw "PowerShell parse errors: $($script.Name)"}}
+foreach($script in Get-ChildItem -LiteralPath $root -Filter '*.ps1' -Recurse){$tokens=$null;$errors=$null;[Management.Automation.Language.Parser]::ParseFile($script.FullName,[ref]$tokens,[ref]$errors)|Out-Null;if($errors.Count){throw "PowerShell parse errors: $($script.Name)"}}
 $checks.Add('all publication and packaging scripts parse')
 $spec=Read-ComponentSpec (Join-Path $root 'components/stc.sdcc/1.0.0/component.json')
 $spec.id='test.component';$spec.compilerId='test-compiler';$spec.license='MIT';$spec.publication.status='ready';$spec.publication.blockers=@()

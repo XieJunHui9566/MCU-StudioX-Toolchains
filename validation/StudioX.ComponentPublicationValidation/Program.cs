@@ -7,21 +7,59 @@ using StudioX.Engine;
 using StudioX.Foundation;
 using StudioX.Packages;
 
-if (args is ["--verify-online-catalog", var catalogUrl, var publicKey, var onlineOutput])
+if (args is ["--verify-public-component", var sourceUrl, var publisherKey, var componentId, var componentVersion, var publicOutput])
 {
+    var root = Path.GetFullPath(publicOutput);
+    if (Directory.Exists(root)) throw new InvalidOperationException("Use a new public download evidence directory.");
+    Directory.CreateDirectory(root);
+    using var service = new DistributionService(root);
+    var remote = await service.ReadAsync(sourceUrl, Path.GetFullPath(publisherKey));
+    if (!remote.Verification.Contains("签名匹配")) throw new InvalidOperationException("Public directory is not verified.");
+    var entry = remote.Catalog.Entries.Single(e => e.Kind == "tool" && e.Id == componentId && e.Version == componentVersion);
+    var publicArchive = await service.DownloadAsync(remote, entry);
+    var cached = await service.DownloadAsync(remote, entry);
+    if (cached != publicArchive) throw new InvalidOperationException("Verified download cache changed.");
+    var tools = new ToolsetCatalog(Path.Combine(root, "isolated-runtime/toolsets"));
+    var manager = new ToolManagementService(tools, new PackRepository(Path.Combine(root, "packs")), new RecentProjectService(root), root);
+    var publicPreview = await manager.PreviewInstallAsync(publicArchive);
+    if (publicPreview.Id != entry.Id || publicPreview.Version != entry.Version || publicPreview.Bytes != entry.InstalledBytes ||
+        !publicPreview.ArchiveSha256.Equals(entry.Sha256, StringComparison.OrdinalIgnoreCase))
+        throw new InvalidOperationException("Public archive identity differs from the signed directory.");
+    await manager.InstallAsync(publicPreview);
+    var publicInstalled = await tools.ResolveAsync(publicPreview.Id, publicPreview.Version, publicPreview.CompilerId, default, true);
+    if (!publicInstalled.Fingerprint.Equals(publicPreview.Fingerprint, StringComparison.OrdinalIgnoreCase))
+        throw new InvalidOperationException("Public import changed the exact manifest bytes.");
+    var publicDuplicate = await manager.InstallAsync(await manager.PreviewInstallAsync(publicArchive));
+    if (!publicDuplicate.AlreadyInstalled) throw new InvalidOperationException("Public reimport replaced the component.");
+    await JsonStore.WriteAsync(Path.Combine(root, "result.json"), new
+    {
+        status = "passed", scope = "public-download-and-import", hardware = false, sourceUrl,
+        id = publicPreview.Id, version = publicPreview.Version, publicPreview.CompilerId, manifestSha256 = publicPreview.Fingerprint,
+        archiveSha256 = publicPreview.ArchiveSha256, remote.CatalogSha256, remote.Verification,
+        checks = new[] { "verified public catalog", "actual HTTPS Release download and SHA-256", "verified cache reuse", "archive identity and sizes", "full imported file verification", "duplicate import preserves component" }
+    });
+    Console.WriteLine("PASS IDE downloads, verifies and imports the public Release, then preserves it on repeated import");
+    return;
+}
+if (args.Length is 4 or 5 && args[0] == "--verify-online-catalog")
+{
+    var catalogUrl = args[1];
+    var publicKey = args[2];
+    var onlineOutput = args[3];
+    var expectedEntries = args.Length == 5 ? int.Parse(args[4], System.Globalization.CultureInfo.InvariantCulture) : 0;
     var onlineRoot = Path.GetFullPath(onlineOutput);
     if (Directory.Exists(onlineRoot)) throw new InvalidOperationException("Use a new online evidence directory.");
     Directory.CreateDirectory(onlineRoot);
     using var service = new DistributionService(onlineRoot);
     var remote = await service.ReadAsync(catalogUrl, Path.GetFullPath(publicKey));
-    if (!remote.Verification.Contains("签名匹配") || remote.Catalog.Entries.Length != 0)
-        throw new InvalidOperationException("Expected the real signed empty bootstrap directory.");
+    if (!remote.Verification.Contains("签名匹配") || remote.Catalog.Entries.Length != expectedEntries)
+        throw new InvalidOperationException("Public directory signature or explicit expected entry count differs.");
     await JsonStore.WriteAsync(Path.Combine(onlineRoot, "result.json"), new
     {
         success = true, network = true, hardware = false, source = catalogUrl,
         remote.CatalogSha256, remote.Verification, entries = remote.Catalog.Entries.Length
     });
-    Console.WriteLine("PASS IDE verifies the public HTTPS bootstrap directory against the pinned publisher key");
+    Console.WriteLine("PASS IDE verifies the public HTTPS directory against the pinned publisher key");
     return;
 }
 if (args.Length != 3) throw new ArgumentException("Usage: <repository> <candidate.json> <new output directory>");
@@ -46,8 +84,8 @@ using var distribution = new DistributionService(data);
 var catalogPath = Path.Combine(repository, "catalog/catalog.json");
 var key = Path.Combine(repository, "trust/publisher.pem");
 var listing = await distribution.ReadAsync(catalogPath, key);
-Check(listing.Verification.Contains("签名匹配") && listing.Catalog.Entries.Length == 0,
-    "IDE distribution service verifies the real signed empty bootstrap catalog");
+Check(listing.Verification.Contains("签名匹配"),
+    "IDE distribution service verifies the real signed component catalog");
 var tampered = Path.Combine(output, "tampered-catalog.json");
 await File.WriteAllTextAsync(tampered, "{\"formatVersion\":1,\"publisher\":\"changed\",\"entries\":[]}");
 File.Copy(catalogPath + ".sig", tampered + ".sig");
@@ -101,6 +139,47 @@ await File.WriteAllTextAsync(Path.Combine(native, "compiler-stderr.txt"), await 
 var firmware = Path.Combine(native, "firmware.ihx");
 Check(process.ExitCode == 0 && File.Exists(firmware) && new FileInfo(firmware).Length > 100,
     "imported SDCC really compiles and links a C51 program with stdint and division runtime support");
+// 用同一导入组件再走 CMake/Ninja，避免仅调用编译器掩盖共享构建工具或路径问题。
+var cmakeBuild = Path.Combine(native, "cmake-build");
+var compiler = installed.Tool("sdcc").Replace('\\', '/').Replace("$", "\\$");
+await File.WriteAllTextAsync(Path.Combine(native, "CMakeLists.txt"), $$"""
+    cmake_minimum_required(VERSION 3.20)
+    project(SdccComponentValidation NONE)
+    add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/firmware.ihx"
+      COMMAND "{{compiler}}" -mmcs51 --model-small --out-fmt-ihx -o firmware.ihx "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+      DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/main.c"
+      WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}" VERBATIM)
+    add_custom_target(firmware ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/firmware.ihx")
+    """);
+async Task RunCMakeAsync(string name, params string[] arguments)
+{
+    var command = new ProcessStartInfo(installed.Tool("cmake"))
+    {
+        WorkingDirectory = native, UseShellExecute = false, CreateNoWindow = true,
+        WindowStyle = ProcessWindowStyle.Hidden, RedirectStandardOutput = true, RedirectStandardError = true
+    };
+    foreach (var argument in arguments) command.ArgumentList.Add(argument);
+    command.Environment.Clear();
+    foreach (var variable in new[] { "SystemRoot", "WINDIR", "ComSpec" })
+        if (Environment.GetEnvironmentVariable(variable) is { } value) command.Environment[variable] = value;
+    command.Environment["PATH"] = ToolsetEnvironment.Create(installed)["PATH"];
+    command.Environment["TEMP"] = command.Environment["TMP"] = native;
+    using var running = Process.Start(command) ?? throw new InvalidOperationException("Cannot start verified CMake.");
+    var outputTask = running.StandardOutput.ReadToEndAsync();
+    var errorTask = running.StandardError.ReadToEndAsync();
+    using var deadline = new CancellationTokenSource(TimeSpan.FromSeconds(60));
+    try { await running.WaitForExitAsync(deadline.Token); }
+    catch { running.Kill(entireProcessTree: true); throw; }
+    await File.WriteAllTextAsync(Path.Combine(native, name + "-stdout.txt"), await outputTask);
+    await File.WriteAllTextAsync(Path.Combine(native, name + "-stderr.txt"), await errorTask);
+    Check(running.ExitCode == 0, "imported CMake/Ninja " + name + " succeeds with the isolated component environment");
+}
+await RunCMakeAsync("configure", "-S", native, "-B", cmakeBuild, "-G", "Ninja", "-DCMAKE_MAKE_PROGRAM=" + installed.Tool("ninja"));
+await RunCMakeAsync("build", "--build", cmakeBuild, "--verbose");
+var directFirmwareBytes = await File.ReadAllBytesAsync(firmware);
+var cmakeFirmwareBytes = await File.ReadAllBytesAsync(Path.Combine(cmakeBuild, "firmware.ihx"));
+Check(directFirmwareBytes.SequenceEqual(cmakeFirmwareBytes),
+    "CMake/Ninja firmware bytes match the direct SDCC compilation");
 await JsonStore.WriteAsync(Path.Combine(output, "result.json"), new
 {
     status = "passed", scope = "offline-build-and-import", hardware = false, publicBinaryReleased = false,

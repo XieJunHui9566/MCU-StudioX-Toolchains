@@ -1,0 +1,110 @@
+{
+  "formatVersion": 1,
+  "archives": [
+    {
+      "role": "sdcc",
+      "file": "sdcc-4.5.0-x64-verified-setup.exe",
+      "url": "https://sourceforge.net/projects/sdcc/files/sdcc-win64/4.5.0/sdcc-4.5.0-x64-setup.exe/download",
+      "bytes": 9398041,
+      "sha256": "f459effe986f4c09f0efa64877a753d44d3b78355c36b5055854a032f543aec5"
+    },
+    {
+      "role": "cmake",
+      "file": "cmake-4.4.0-windows-x86_64.zip",
+      "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-windows-x86_64.zip",
+      "bytes": 54388920,
+      "sha256": "156d70eb7625a7b469444df7d0861d2af8d5d0a437fce32c350372b08f5620e8"
+    },
+    {
+      "role": "ninja",
+      "file": "ninja-win.zip",
+      "url": "https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip",
+      "bytes": 262670,
+      "sha256": "bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f"
+    }
+  ],
+  "sdccPrograms": [
+    {
+      "file": "sdcc.exe",
+      "sha256": "3fdb1efa25e73872e1ccfecdb011dafae5b1b4d4e55195474995630214c584eb"
+    },
+    {
+      "file": "sdcpp.exe",
+      "sha256": "85b90111948f9f873a0e5cfcdfca0635f3ef42313a65f9662a917a09f58b08ee"
+    },
+    {
+      "file": "cc1",
+      "sha256": "471ea713a3899e283da335c0afc0211769d58c2f17eb5db6d01f7d13eed70129"
+    },
+    {
+      "file": "sdar.exe",
+      "sha256": "debc8fc69bb5510609e3e04f35e7c4c412fa1878fa4f5b2f72aef3362718b66d"
+    },
+    {
+      "file": "sdas8051.exe",
+      "sha256": "2c5a54b44906edaaf21a85da7cf75bed9ef938696f47410d71212e25591ccd72"
+    },
+    {
+      "file": "sdld.exe",
+      "sha256": "c43e4ee7e9fb56cd22ffcd0f6402b41a294236d3cba341e8faa6140aeeb2b786"
+    },
+    {
+      "file": "sdobjcopy.exe",
+      "sha256": "6f4e344542729e84049e8633a19e1b1f7ce0ccc9a98bd086d6612deadd9c6cfa"
+    },
+    {
+      "file": "packihx.exe",
+      "sha256": "bc80516ca0a19a90d3977a935c51b8f5af4d773ecf2ffa055be579c9c6587940"
+    },
+    {
+      "file": "makebin.exe",
+      "sha256": "4acb27307dba1b72724acae6c23e5e4302b531ce136e84929ea76894e17e2aa6"
+    },
+    {
+      "file": "sdranlib.exe",
+      "sha256": "cf84391296caa98ce66542a7ea56e370d7540f7a0d08c169db37583134d52cdf"
+    },
+    {
+      "file": "sdnm.exe",
+      "sha256": "4ff678e26150b2cbb58421d86e57af9afcf038c974c79a0bab7e8ffd1bcff849"
+    }
+  ],
+  "notices": [
+    {
+      "file": "Boost-LICENSE_1_0.txt",
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    {
+      "file": "GCC-COPYING.RUNTIME",
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "file": "MinGW-w64-AUTHORS.txt",
+      "sha256": "8f308316e7a94b8410f871868bd3948f126526dc1775aeee97a0e365f9a0fd9f"
+    },
+    {
+      "file": "MinGW-w64-COPYING.MinGW-w64-runtime-COPYING.MinGW-w64-runtime.txt.txt",
+      "sha256": "e9b2dc02451ea29092a1f25fa0f3c07207ed421f1807dffb0c4e6dce69dee7bd"
+    },
+    {
+      "file": "MinGW-w64-COPYING.txt",
+      "sha256": "99a69660981156c21336fdb5661f89341b013c94e4bf9e1c7467b4745718397f"
+    },
+    {
+      "file": "MinGW-w64-DISCLAIMER.PD.txt",
+      "sha256": "87f33608570312a0f2a9745edcb2527275df813b13982e8c3b3f893d88a4141a"
+    },
+    {
+      "file": "MinGW-w64-DISCLAIMER.txt",
+      "sha256": "039ed6b4f31bb7fb97e733170b58cc435335352e4745734fcfd113877fdaf340"
+    },
+    {
+      "file": "MinGW-w64-mingw-w64-libraries-winpthreads-COPYING.txt",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    {
+      "file": "Ninja-COPYING.txt",
+      "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "formatVersion": 1,
+  "id": "stc.sdcc",
+  "version": "1.0.1",
+  "host": "win-x64",
+  "compilerId": "sdcc-4.5.0-15242",
+  "displayName": "STC 8-bit / SDCC",
+  "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+  "payloadFileCount": 10415,
+  "sourceUrls": [
+    "https://sdcc.sourceforge.net/",
+    "https://sourceforge.net/projects/sdcc/files/sdcc/4.5.0/",
+    "https://github.com/Kitware/CMake/releases/tag/v4.4.0",
+    "https://github.com/ninja-build/ninja/releases/tag/v1.10.2"
+  ],
+  "license": "SDCC: GPL-2.0-or-later / GPL-3.0-or-later with runtime exceptions; CMake: BSD-3-Clause and bundled permissive notices; Ninja: Apache-2.0; see per-file source and notices",
+  "releaseNotes": "官方 SDCC 4.5.0 / CMake 4.4.0 命令行 / Ninja 1.10.2。编译器不变，组件内容以新版本并存；不包含本机厂商头文件、备份、调试器、模拟器或 CMake GUI。旧工程继续锁定原组件；新器件包或显式版本切换后才使用 1.0.1。",
+  "publication": {
+    "status": "ready",
+    "blockers": [],
+    "sourceAssets": [
+      {
+        "file": "cmake-4.4.0.tar.gz",
+        "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+        "bytes": 13275398
+      },
+      {
+        "file": "ninja-1.10.2.tar.gz",
+        "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+        "bytes": 213959
+      },
+      {
+        "file": "sdcc-src-4.5.0.tar.bz2",
+        "sha256": "d5030437fb436bb1d93a8dbdbfb46baaa60613318f4fb3f5871d72815d1eed80",
+        "bytes": 20298103
+      },
+      {
+        "file": "stc.sdcc-1.0.1-build-and-notices.zip",
+        "sha256": "423936773f7ccf19c6c27b001dfdc9367ac5279b21b73348e7d14a281d52a987",
+        "bytes": 21298
+      }
+    ],
+    "reviewEvidence": {
+      "file": "reviews/stc.sdcc-1.0.1-win-x64.json",
+      "sha256": "344182d0693834e897f3a9fde5e1cbf1ec85ff5551e79936e942f029af11b8e3"
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "scope": "offline-build-and-import",
+    "hardware": false,
+    "publicBinaryReleased": false,
+    "id": "stc.sdcc",
+    "version": "1.0.1",
+    "host": "win-x64",
+    "compilerId": "sdcc-4.5.0-15242",
+    "manifestSha256": "434abd484f31e2ee3822a16b9b8771d850491e5e6a5d587f017459d6fecc7f4f",
+    "archiveSha256": "b4c1755eb5fa5bf2f77fac7d46e373b4ecc33a72d33f6427ffc98a329fe0176f",
+    "archiveFiles": 10416,
+    "downloadBytes": 57622699,
+    "installedBytes": 215720767,
+    "firmwareSha256": "d19a41f19628d1f44bc1fc234417bfa1e64c4a7745675328283fb90be0066def",
+    "checks": [
+      "unapproved native package stays a local candidate and is absent from the public catalog",
+      "IDE distribution service verifies the real signed component catalog",
+      "IDE rejects a changed catalog with the original signature",
+      "IDE rejects a catalog when the selected publisher key differs",
+      "IDE preview reads the real candidate's immutable identity and archive hash",
+      "actual download and expanded sizes match the candidate receipt and GitHub asset limit",
+      "fresh candidate import fully verifies all installed files without changing the manifest",
+      "reimport completely verifies the same native component and skips replacement",
+      "native validation uses the explicitly selected SDCC component",
+      "imported SDCC really compiles and links a C51 program with stdint and division runtime support",
+      "imported CMake/Ninja configure succeeds with the isolated component environment",
+      "imported CMake/Ninja build succeeds with the isolated component environment",
+      "CMake/Ninja firmware bytes match the direct SDCC compilation"
+    ]
+  }
+}
