@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "riscv.xpack",
+  "version": "1.0.2",
+  "host": "win-x64",
+  "compilerId": "xpack-riscv-gcc-15.2.0",
+  "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+  "archiveSha256": "D10A8E1559F2D48BB9EE1E3AAF86B4185807269F40862F6CEE7D5F22DD37E25A",
+  "downloadBytes": 231404428,
+  "installedBytes": 1960204472,
+  "checks": [
+    "explicit supported component identity",
+    "full archive import preserves exact manifest and verifies every file",
+    "duplicate import verifies and preserves installed component",
+    "gcc-build succeeds with isolated environment",
+    "gcc creates real ELF with installed headers, compiler and linker",
+    "gdb-version succeeds with isolated environment",
+    "openocd-version succeeds with isolated environment",
+    "cmake-version succeeds with isolated environment",
+    "ninja-version succeeds with isolated environment"
+  ],
+  "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
+}

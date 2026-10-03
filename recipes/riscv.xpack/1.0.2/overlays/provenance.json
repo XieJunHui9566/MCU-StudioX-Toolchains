@@ -1,0 +1,10 @@
+{
+  "source": "xPack GNU RISC-V Embedded GCC 15.2.0; local complete runtime copy",
+  "gccVersionOutput": "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 15.2.0",
+  "openOcdVersionOutput": "xPack Open On-Chip Debugger 0.12.0+dev-02228-ge5888bda3-dirty (2025-10-04-22:44)",
+  "cmakeVersionOutput": "cmake version 4.4.0",
+  "ninjaVersionOutput": "1.10.2",
+  "notes": "Local development bundle; original headers, libraries, DLLs, scripts and distribution notices retained. No vendor SDK or user configuration included. Hardware download/debug integration is separate.",
+  "ninjaSource": "Official ninja-build v1.10.2 ninja-win.zip; replaces local same-version binary with an unmodified official input",
+  "componentRevision": "1.0.2 uses verified official inputs; existing versions and project locks remain unchanged"
+}

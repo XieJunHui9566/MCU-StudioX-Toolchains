@@ -104,6 +104,24 @@
       "specification": "espressif.idf/6.1.0/component.json",
       "id": "espressif.idf",
       "publicationStatus": "pending-materials"
+    },
+    {
+      "id": "arm.gnu",
+      "version": "1.0.2",
+      "host": "win-x64",
+      "compilerId": "arm-gnu-15.2.rel1",
+      "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+      "publicationStatus": "ready",
+      "specification": "arm.gnu/1.0.2/component.json"
+    },
+    {
+      "id": "riscv.xpack",
+      "version": "1.0.2",
+      "host": "win-x64",
+      "compilerId": "xpack-riscv-gcc-15.2.0",
+      "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+      "publicationStatus": "ready",
+      "specification": "riscv.xpack/1.0.2/component.json"
     }
   ],
   "formatVersion": 1

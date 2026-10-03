@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "scope": "public-download-and-import",
+  "hardware": false,
+  "sourceUrl": "https://raw.githubusercontent.com/XieJunHui9566/MCU-StudioX-Toolchains/main/catalog/catalog.json",
+  "id": "pc.mingw",
+  "version": "1.0.0",
+  "compilerId": "mingw-gcc-13.1.0",
+  "manifestSha256": "7e111a102f6fb1db10cae1faa8174d9d568d0c3a676ca5657ea3f005a131d3f4",
+  "archiveSha256": "4B7E9F74D59C87E0A9B41522C0D42D3747D3D2D20D366B20C22900C7D3F454E5",
+  "catalogSha256": "D4538C65D14092F8E6BE546FBAF4FFF1770A47A247E3140F7BAC3E43D8A7341C",
+  "verification": "\u5DF2\u9A8C\u8BC1\u7EC4\u4EF6\u5E93 \u00B7 \u7B7E\u540D\u5339\u914D IDE \u5185\u7F6E\u516C\u94A5 \u00B7 \u5BC6\u94A5 SHA-256 02F415BBE0ABDF7FFAF456731187354593DE93663A66F3DC4B48BF1BE3E7E594",
+  "checks": [
+    "verified public catalog",
+    "actual HTTPS Release download and SHA-256",
+    "verified cache reuse",
+    "archive identity and sizes",
+    "full imported file verification",
+    "duplicate import preserves component"
+  ]
+}

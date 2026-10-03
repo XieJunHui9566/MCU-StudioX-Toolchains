@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "status": "approved",
+  "scope": "redistribution-materials-and-binary-inventory",
+  "id": "arm.gnu",
+  "version": "1.0.2",
+  "host": "win-x64",
+  "compilerId": "arm-gnu-15.2.rel1",
+  "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+  "archiveSha256": "4BD8C464093145497F71527D12521FE4E4C8D4B199D9C67558B576D28E714B16",
+  "sourceAssets": [
+    {
+      "file": "cmake-4.4.0.tar.gz",
+      "bytes": 13275398,
+      "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc"
+    },
+    {
+      "file": "ninja-1.10.2.tar.gz",
+      "bytes": 213959,
+      "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed"
+    },
+    {
+      "file": "qtbase-everywhere-src-6.10.1.tar.xz",
+      "bytes": 50234516,
+      "sha256": "5a6226f7e23db51fdc3223121eba53f3f5447cf0cc4d6cb82a3a2df7a65d265d"
+    },
+    {
+      "file": "xpack-openocd-0.12.0-7-build.tar.gz",
+      "bytes": 1452241,
+      "sha256": "bd6d1cf7e71b4716f734f255623d6d2c7e55ee8f4fbc2c1afa1cd4cdb2ed7fb9"
+    },
+    {
+      "file": "xbb-helper-v4.2.0.tar.gz",
+      "bytes": 2166280,
+      "sha256": "745fa2645a51bf3b035417e7ddbf753d13df8d8aa2fe68b8dfb9785c5a6c3f26"
+    },
+    {
+      "file": "openocd-e5888bda38f4952e2ae92f7dc5b25fc9a2d1c2b3.tar.gz",
+      "bytes": 3409570,
+      "sha256": "3359e79abf309d98a0759071ea0e233818855300a8854e32434d66b7e31eedaa"
+    },
+    {
+      "file": "jimtcl-f160866171457474f7c4d6ccda70f9b77524407e.tar.gz",
+      "bytes": 4466344,
+      "sha256": "826639516ad21262b67f4e5b053d844c1fc1823815458ce9fbd7c19a9639551d"
+    },
+    {
+      "file": "libjaylink-0d23921a05d5d427332a142d154c213d0c306eb1.tar.gz",
+      "bytes": 75218,
+      "sha256": "cad704ea8e9995e47e8dfc5cf38ee30b10d85d3810aef5cf691379e4c908c6d2"
+    },
+    {
+      "file": "libiconv-1.18.tar.gz",
+      "bytes": 5822590,
+      "sha256": "3b08f5f4f9b4eb82f151a7040bfd6fe6c6fb922efe4b1659c66ea933276965e8"
+    },
+    {
+      "file": "libftdi1-1.5.tar.bz2",
+      "bytes": 116297,
+      "sha256": "7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049"
+    },
+    {
+      "file": "libusb-1.0.29.tar.bz2",
+      "bytes": 645381,
+      "sha256": "5977fc950f8d1395ccea9bd48c06b3f808fd3c2c961b44b0c2e6e29fc3a70a85"
+    },
+    {
+      "file": "hidapi-0.15.0.tar.gz",
+      "bytes": 363838,
+      "sha256": "5d84dec684c27b97b921d2f3b73218cb773cf4ea915caee317ac8fc73cef8136"
+    },
+    {
+      "file": "texinfo-7.2.tar.xz",
+      "bytes": 6408432,
+      "sha256": "0329d7788fbef113fa82cb80889ca197a344ce0df7646fe000974c5d714363a6"
+    },
+    {
+      "file": "autoconf-2.72.tar.xz",
+      "bytes": 1389680,
+      "sha256": "ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a"
+    },
+    {
+      "file": "automake-1.16.5.tar.xz",
+      "bytes": 1601740,
+      "sha256": "f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469"
+    },
+    {
+      "file": "libtool-2.4.7.tar.xz",
+      "bytes": 1016040,
+      "sha256": "4f7f217f057ce655ff22559ad221a0fd8ef84ad1fc5fcb6990cecc333aa1635d"
+    },
+    {
+      "file": "pkg-config-0.29.2.tar.gz",
+      "bytes": 2016830,
+      "sha256": "6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591"
+    },
+    {
+      "file": "arm-gnu-toolchain-src-snapshot-15.2.rel1.tar.xz",
+      "bytes": 358772144,
+      "sha256": "06f4e5792b566a771c300ac6f46c3422e23e34f4e3a5d44a8cb5594ead6fb82e"
+    },
+    {
+      "file": "gnu-devtools-for-arm-67649ca70fdd3454f8965ee3a485066e64d875f4.tar.gz",
+      "bytes": 46649,
+      "sha256": "641c6abdd10e462a039255438bfe6a61578402356fbb985189909e64bef97781"
+    },
+    {
+      "file": "arm.gnu-1.0.2-build-and-notices.zip",
+      "bytes": 805593,
+      "sha256": "636b1aaaabfe9418b7a362435eaf7447191958d14136788b1c3cd17a892fac13"
+    }
+  ],
+  "officialBinaryInputs": [
+    {
+      "group": "gcc",
+      "file": "arm-official-15.2.rel1-i686.zip",
+      "prefix": "",
+      "url": "https://developer.arm.com/-/media/Files/downloads/gnu/15.2.rel1/binrel/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi.zip",
+      "bytes": 298175332,
+      "sha256": "b40db54536d2fdf0ff21f4316b56c1fc4d3b782b792c5b298bcbeaf5eccedb96"
+    },
+    {
+      "group": "cmake",
+      "file": "cmake-4.4.0-windows-x86_64.zip",
+      "prefix": "cmake-4.4.0-windows-x86_64/",
+      "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-windows-x86_64.zip",
+      "bytes": 54388920,
+      "sha256": "156d70eb7625a7b469444df7d0861d2af8d5d0a437fce32c350372b08f5620e8"
+    },
+    {
+      "group": "openocd",
+      "file": "openocd-official-win32-x64.zip",
+      "prefix": "xpack-openocd-0.12.0-7/",
+      "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-win32-x64.zip",
+      "bytes": 3225998,
+      "sha256": "6bfd3c97135aafef8affc9af1acf34fd0e2b9ca26044506f6abd7f95b7630052"
+    },
+    {
+      "group": "ninja",
+      "file": "ninja-1.10.2-win.zip",
+      "prefix": "",
+      "url": "https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip",
+      "bytes": 262670,
+      "sha256": "bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f"
+    }
+  ],
+  "materials": [
+    "All compiler/build-tool payload bytes verified against pinned unmodified official inputs.",
+    "Actual corresponding source archives, build scripts, patches, static-library dependencies and retained third-party licenses supplied.",
+    "Static CMake GUI QtBase source and official build instructions supplied separately; IDE is a separate process."
+  ],
+  "limitations": [
+    "No claim of bit-identical rebuilding from upstream source.",
+    "Offline component import, compiler ELF link and debugger/tool startup checks only; no hardware acceptance."
+  ],
+  "validationEvidenceSha256": "67f7bbdc6bb8d472b29a7bdff761b953402a7701109fdd7adb1f3e472a40793a"
+}

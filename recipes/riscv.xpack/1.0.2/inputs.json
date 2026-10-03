@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "manifestSha256": "cd313807ecaa9990a3526d6ab653030b425dea8a604b13ddd8612f6923ac5311",
+  "archives": [
+    {
+      "group": "gcc",
+      "file": "riscv-official-win32-x64.zip",
+      "prefix": "xpack-riscv-none-elf-gcc-15.2.0-1/",
+      "url": "https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/download/v15.2.0-1/xpack-riscv-none-elf-gcc-15.2.0-1-win32-x64.zip",
+      "bytes": 465438733,
+      "sha256": "85ef714dacd273b1dadf4af4892774520ac01915bfa6da816a56e7e41591e09e"
+    },
+    {
+      "group": "cmake",
+      "file": "cmake-4.4.0-windows-x86_64.zip",
+      "prefix": "cmake-4.4.0-windows-x86_64/",
+      "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-windows-x86_64.zip",
+      "bytes": 54388920,
+      "sha256": "156d70eb7625a7b469444df7d0861d2af8d5d0a437fce32c350372b08f5620e8"
+    },
+    {
+      "group": "openocd",
+      "file": "openocd-official-win32-x64.zip",
+      "prefix": "xpack-openocd-0.12.0-7/",
+      "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-win32-x64.zip",
+      "bytes": 3225998,
+      "sha256": "6bfd3c97135aafef8affc9af1acf34fd0e2b9ca26044506f6abd7f95b7630052"
+    },
+    {
+      "group": "ninja",
+      "file": "ninja-1.10.2-win.zip",
+      "prefix": "",
+      "url": "https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip",
+      "bytes": 262670,
+      "sha256": "bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f"
+    }
+  ]
+}

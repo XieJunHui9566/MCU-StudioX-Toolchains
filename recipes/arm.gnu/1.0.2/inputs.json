@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+  "archives": [
+    {
+      "group": "gcc",
+      "file": "arm-official-15.2.rel1-i686.zip",
+      "prefix": "",
+      "url": "https://developer.arm.com/-/media/Files/downloads/gnu/15.2.rel1/binrel/arm-gnu-toolchain-15.2.rel1-mingw-w64-i686-arm-none-eabi.zip",
+      "bytes": 298175332,
+      "sha256": "b40db54536d2fdf0ff21f4316b56c1fc4d3b782b792c5b298bcbeaf5eccedb96"
+    },
+    {
+      "group": "cmake",
+      "file": "cmake-4.4.0-windows-x86_64.zip",
+      "prefix": "cmake-4.4.0-windows-x86_64/",
+      "url": "https://github.com/Kitware/CMake/releases/download/v4.4.0/cmake-4.4.0-windows-x86_64.zip",
+      "bytes": 54388920,
+      "sha256": "156d70eb7625a7b469444df7d0861d2af8d5d0a437fce32c350372b08f5620e8"
+    },
+    {
+      "group": "openocd",
+      "file": "openocd-official-win32-x64.zip",
+      "prefix": "xpack-openocd-0.12.0-7/",
+      "url": "https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.12.0-7/xpack-openocd-0.12.0-7-win32-x64.zip",
+      "bytes": 3225998,
+      "sha256": "6bfd3c97135aafef8affc9af1acf34fd0e2b9ca26044506f6abd7f95b7630052"
+    },
+    {
+      "group": "ninja",
+      "file": "ninja-1.10.2-win.zip",
+      "prefix": "",
+      "url": "https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip",
+      "bytes": 262670,
+      "sha256": "bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f"
+    }
+  ]
+}

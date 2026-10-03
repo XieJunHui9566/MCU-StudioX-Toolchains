@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "arm.gnu",
+  "version": "1.0.2",
+  "host": "win-x64",
+  "compilerId": "arm-gnu-15.2.rel1",
+  "manifestSha256": "2d0dec598fa51171e0cc5d15329fccfa871648b3119c582e92d0c1edf18ce917",
+  "archiveSha256": "4BD8C464093145497F71527D12521FE4E4C8D4B199D9C67558B576D28E714B16",
+  "downloadBytes": 142368719,
+  "installedBytes": 1325223192,
+  "checks": [
+    "explicit supported component identity",
+    "full archive import preserves exact manifest and verifies every file",
+    "duplicate import verifies and preserves installed component",
+    "gcc-build succeeds with isolated environment",
+    "gcc creates real ELF with installed headers, compiler and linker",
+    "gdb-version succeeds with isolated environment",
+    "openocd-version succeeds with isolated environment",
+    "cmake-version succeeds with isolated environment",
+    "ninja-version succeeds with isolated environment"
+  ],
+  "limitations": "Compiler and component import acceptance only; SDK integration and hardware acceptance are reported separately."
+}
