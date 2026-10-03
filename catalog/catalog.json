@@ -16,6 +16,21 @@
       "releaseNotes": "官方 SDCC 4.5.0 / CMake 4.4.0 命令行 / Ninja 1.10.2。编译器不变，组件内容以新版本并存；不包含本机厂商头文件、备份、调试器、模拟器或 CMake GUI。旧工程继续锁定原组件；新器件包或显式版本切换后才使用 1.0.1。",
       "pluginApi": 0,
       "frameworks": []
+    },
+    {
+      "kind": "tool",
+      "id": "pc.mingw",
+      "version": "1.0.0",
+      "name": "Windows PC GCC / G++ 13.1.0",
+      "archive": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/pc.mingw-1.0.0-win-x64.mcutoolchain",
+      "sha256": "4B7E9F74D59C87E0A9B41522C0D42D3747D3D2D20D366B20C22900C7D3F454E5",
+      "downloadBytes": 51226575,
+      "installedBytes": 359194033,
+      "license": "GCC GPL-3.0-or-later with runtime exceptions; Binutils GPL-3.0-or-later; MinGW-w64/Zlib/ISL permissive; GMP/MPFR/MPC/Libiconv per-file LGPL/GPL; retained licenses apply",
+      "sourceUrl": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/tree/main/components/pc.mingw/1.0.0",
+      "releaseNotes": "保留完整安装包现有组件身份和原始清单；按工程精确版本安装。",
+      "pluginApi": 0,
+      "frameworks": []
     }
   ]
 }

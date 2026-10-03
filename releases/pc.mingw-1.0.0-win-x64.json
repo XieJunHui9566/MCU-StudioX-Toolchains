@@ -1,0 +1,90 @@
+{
+  "formatVersion": 1,
+  "id": "pc.mingw",
+  "version": "1.0.0",
+  "host": "win-x64",
+  "compilerId": "mingw-gcc-13.1.0",
+  "manifestSha256": "7e111a102f6fb1db10cae1faa8174d9d568d0c3a676ca5657ea3f005a131d3f4",
+  "tag": "pc.mingw-1.0.0-win-x64",
+  "asset": "pc.mingw-1.0.0-win-x64.mcutoolchain",
+  "sha256": "4B7E9F74D59C87E0A9B41522C0D42D3747D3D2D20D366B20C22900C7D3F454E5",
+  "downloadBytes": 51226575,
+  "installedBytes": 359194033,
+  "published": true,
+  "reviewEvidenceSha256": "14f502726ffd976edb53c9206fbc996cc3c4ef2492e5049838d365c1b89fc194",
+  "validation": {
+    "evidenceSha256": "2cb0c033a78686a48ad86bd6c49cb191833e90e36d63adfe294c692f841cedae",
+    "scope": "offline-build-and-import",
+    "manifestSha256": "7e111a102f6fb1db10cae1faa8174d9d568d0c3a676ca5657ea3f005a131d3f4",
+    "archiveSha256": "4B7E9F74D59C87E0A9B41522C0D42D3747D3D2D20D366B20C22900C7D3F454E5",
+    "status": "passed"
+  },
+  "sourceAssets": [
+    {
+      "bytes": 87451196,
+      "sha256": "61d684f0aa5e76ac6585ad8898a2427aade8979ed5e7f85492286c4dfc13ee86",
+      "file": "gcc-13.1.0.tar.xz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/gcc-13.1.0.tar.xz"
+    },
+    {
+      "bytes": 25167756,
+      "sha256": "645c25f563b8adc0a81dbd6a41cffbf4d37083a382e02d5d3df4f65c09516d00",
+      "file": "binutils-2.39.tar.xz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/binutils-2.39.tar.xz"
+    },
+    {
+      "bytes": 2027316,
+      "sha256": "fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2",
+      "file": "gmp-6.2.1.tar.xz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/gmp-6.2.1.tar.xz"
+    },
+    {
+      "bytes": 1525476,
+      "sha256": "0c98a3f1732ff6ca4ea690552079da9c597872d30e96ec28414ee23c95558a7f",
+      "file": "mpfr-4.1.0.tar.xz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/mpfr-4.1.0.tar.xz"
+    },
+    {
+      "bytes": 838731,
+      "sha256": "17503d2c395dfcf106b622dc142683c1199431d095367c6aacba6eec30340459",
+      "file": "mpc-1.2.1.tar.gz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/mpc-1.2.1.tar.gz"
+    },
+    {
+      "bytes": 1977048,
+      "sha256": "be7b210647ccadf90a2f0b000fca11a4d40546374a850db67adb32fad4b230d9",
+      "file": "isl-0.25.tar.xz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/isl-0.25.tar.xz"
+    },
+    {
+      "bytes": 5413283,
+      "sha256": "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313",
+      "file": "libiconv-1.17.tar.gz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/libiconv-1.17.tar.gz"
+    },
+    {
+      "bytes": 1556687,
+      "sha256": "1525952a0a567581792613a9723333d7f8cc20b87a81f920fb8bc7e3f2251428",
+      "file": "zlib-1.2.13.tar.gz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/zlib-1.2.13.tar.gz"
+    },
+    {
+      "bytes": 13920612,
+      "sha256": "760fc2b908418060f5ccfdf9740ea9e6560f60b155d4ebb1608348fc56abf386",
+      "file": "mingw-w64-v11.0.0.tar.gz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/mingw-w64-v11.0.0.tar.gz"
+    },
+    {
+      "bytes": 578807,
+      "sha256": "cb92e4c9df87cd3536a4f9318620a3153bae3de813207aded08a6747ba2d0fc1",
+      "file": "mingw-builds-7ff96692a8032d893781523b311ac9b6cbbda0a1.tar.gz",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/mingw-builds-7ff96692a8032d893781523b311ac9b6cbbda0a1.tar.gz"
+    },
+    {
+      "bytes": 183097,
+      "sha256": "ee5104db4a3a1d06d95540f86fd0e4c50b79de674257f594a13c519fd05efa18",
+      "file": "pc.mingw-1.0.0-build-and-notices.zip",
+      "url": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/pc.mingw-1.0.0-win-x64/pc.mingw-1.0.0-build-and-notices.zip"
+    }
+  ]
+}

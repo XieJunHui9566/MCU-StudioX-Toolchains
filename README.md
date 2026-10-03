@@ -10,7 +10,9 @@ MCU StudioX 的独立开发组件仓库，覆盖 MCU、HDL 和 Windows PC 开发
 
 [公开下载验收](validation/sdcc-1.0.1-public-download.json) 已通过：真实 IDE 服务从 HTTPS 目录验签，下载 Release、校验归档、复用缓存、完整导入并保留重复导入的组件。[离线构建验收](validation/sdcc-1.0.1-local-candidate.json) 覆盖标准头文件、运行库及 CMake/Ninja 构建；不包含硬件验收。
 
-原有 11 个组件的身份和原始清单保持不变，继续为 `pending-materials`。旧 SDCC 目录混入本机厂商头文件、备份及独立运行库，新组件从官方发行归档重新组装；旧工程不会自动更换版本。
+[pc.mingw/1.0.0（Windows x64）](https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/tag/pc.mingw-1.0.0-win-x64) 已发布原生 7z 组件，包含 GCC 13.1.0 / Binutils 2.39 / MinGW-w64 11。3661 个上游编译器文件与官方归档逐项匹配，提供对应源码、构建脚本及补丁，已通过真实导入、C/C++ 编译、LTO 与本机运行验证。原组件身份和清单字节保持不变，已有工程可以继续使用其内容锁。
+
+其余原有 10 个组件的身份和原始清单保持不变，继续为 `pending-materials`。旧 SDCC 目录混入本机厂商头文件、备份及独立运行库，新组件从官方发行归档重新组装；旧工程不会自动更换版本。
 
 ESP-IDF 5.5.5、6.0.3、6.1.0 已登记为本地候选组件，版本并存，仍为 `pending-materials`。[7z 本地验收记录](validation/7z-local-candidates-20261003.json) 包含 11 份归档、6 次完整导入和 ARM / ESP-IDF 实际编译。其余 5 份仅完成清单预览与原生归档完整性检查；这些结果不代表公开发布或硬件验收。记录中的 1.0.1 迁移样本不代表厂商工具升级。
 
