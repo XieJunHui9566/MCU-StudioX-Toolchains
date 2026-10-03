@@ -1,0 +1,258 @@
+{
+  "metadataPreviews": [
+    {
+      "payloadVerified": false,
+      "files": 14437,
+      "unpackedBytes": 1960137849,
+      "nativeArchiveIntegrityVerified": true,
+      "identity": "riscv.xpack/1.0.1/win-x64"
+    },
+    {
+      "payloadVerified": false,
+      "files": 11577,
+      "unpackedBytes": 463133262,
+      "nativeArchiveIntegrityVerified": true,
+      "identity": "agm.agrv/1.0.1/win-x64"
+    },
+    {
+      "payloadVerified": false,
+      "files": 728,
+      "unpackedBytes": 163407206,
+      "nativeArchiveIntegrityVerified": true,
+      "identity": "agm.pin-mapping/1.0.1/win-x64"
+    },
+    {
+      "payloadVerified": false,
+      "files": 23924,
+      "unpackedBytes": 997825254,
+      "nativeArchiveIntegrityVerified": true,
+      "identity": "espressif.esp8266-rtos/3.4.0/win-x64"
+    },
+    {
+      "payloadVerified": false,
+      "files": 49510,
+      "unpackedBytes": 4949400253,
+      "nativeArchiveIntegrityVerified": true,
+      "identity": "espressif.idf/5.5.4/win-x64"
+    }
+  ],
+  "publishedBinaries": false,
+  "checks": 206.0,
+  "date": "2026-10-03",
+  "profile": {
+    "method": "LZMA2",
+    "compressionThreads": 2,
+    "solidBlockMiB": 64,
+    "level": 5,
+    "dictionaryMiB": 32
+  },
+  "archives": [
+    {
+      "version": "1.0.1",
+      "reductionPercent": 71.17,
+      "previousZipBytes": 498204316,
+      "id": "arm.gnu",
+      "sha256": "554B57AE27B84E7B72BE1327A181A38EB6BACBD39F76ADEEA252A50642C958F6",
+      "container": "7z",
+      "bytes": 143651669,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "arm.gnu-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "1.0.1",
+      "reductionPercent": 70.84,
+      "previousZipBytes": 497602171,
+      "id": "wch.riscv",
+      "sha256": "A7C3B4A00052DECF7E90C24C175B711603A73FCAF7D73213EC388EACA5F9B111",
+      "container": "7z",
+      "bytes": 145078024,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "wch.riscv-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "1.0.1",
+      "reductionPercent": 68.45,
+      "previousZipBytes": 733547197,
+      "id": "riscv.xpack",
+      "sha256": "D9D14706A04E0C7249B3D00ADB8CAED91BB456E4F8478CB736831CA56BE9AC0D",
+      "container": "7z",
+      "bytes": 231407579,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "riscv.xpack-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "1.0.1",
+      "reductionPercent": 66.3,
+      "previousZipBytes": 218425584,
+      "id": "agm.agrv",
+      "sha256": "E4A41F59A9CF8AD1CDF3B20806F4A38F3FB51EE4ECF0A99A6B95D1BE333EEA6D",
+      "container": "7z",
+      "bytes": 73613502,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "agm.agrv-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "1.0.1",
+      "reductionPercent": 15.21,
+      "previousZipBytes": 129407475,
+      "id": "agm.pin-mapping",
+      "sha256": "2FEE0EA4F24A0E0144598EE6BD0BD0C3270CB1CA478978C20EFD69C41A0B7D7B",
+      "container": "7z",
+      "bytes": 109730255,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "agm.pin-mapping-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "1.0.1",
+      "reductionPercent": 48.84,
+      "previousZipBytes": 25827828,
+      "id": "agm.logic",
+      "sha256": "756E20A116DB4DD7E5A9684389B08CF98F199CF9416A7A9B0D49A622991351A8",
+      "container": "7z",
+      "bytes": 13212723,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "agm.logic-1.0.1-win-x64.mcutoolchain"
+    },
+    {
+      "version": "3.4.0",
+      "reductionPercent": 63.51,
+      "previousZipBytes": 473366898,
+      "id": "espressif.esp8266-rtos",
+      "sha256": "5D8E27D7F383F87AFAB49DF499BDC440524C2817C57EFCBBEADBABACD4446B55",
+      "container": "7z",
+      "bytes": 172709742,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "espressif.esp8266-rtos-3.4.0-win-x64.mcutoolchain"
+    },
+    {
+      "version": "5.5.4",
+      "reductionPercent": 68.26,
+      "previousZipBytes": 2007843079,
+      "id": "espressif.idf",
+      "sha256": "064695B0C824CEF4D7AB7ED14E9AF8BAD197ED09C27CEF0B92FAE762BB9852AC",
+      "container": "7z",
+      "bytes": 637305617,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "espressif.idf-5.5.4-win-x64.mcutoolchain"
+    },
+    {
+      "version": "5.5.5",
+      "reductionPercent": 56.73,
+      "previousZipBytes": 1577518360,
+      "id": "espressif.idf",
+      "sha256": "1FFF5DFBCE7B32EEE4D34677DFE5C3BB62C1E5ADCA5EBA6E5DEDE96EE5A32433",
+      "container": "7z",
+      "bytes": 682636783,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "espressif.idf-5.5.5-win-x64.mcutoolchain"
+    },
+    {
+      "version": "6.0.3",
+      "reductionPercent": 58.54,
+      "previousZipBytes": 1839980936,
+      "id": "espressif.idf",
+      "sha256": "BE5D84D39F21838B3D75117753A64A2466988885C0969E6FB893E47D84F44D16",
+      "container": "7z",
+      "bytes": 762844531,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "espressif.idf-6.0.3-win-x64.mcutoolchain"
+    },
+    {
+      "version": "6.1.0",
+      "reductionPercent": 58.6,
+      "previousZipBytes": 1850403578,
+      "id": "espressif.idf",
+      "sha256": "1E94EBF42C6F91FA1AC069FC1C94F012D767CE5240A6630A9F8582E5CDAB6D28",
+      "container": "7z",
+      "bytes": 766142319,
+      "originalManifestPreserved": true,
+      "publicRelease": false,
+      "archive": "espressif.idf-6.1.0-win-x64.mcutoolchain"
+    }
+  ],
+  "completePayloadImports": [
+    {
+      "duplicateVerified": true,
+      "identity": "arm.gnu/1.0.1/win-x64",
+      "files": 17276,
+      "payloadVerified": true,
+      "manifestSha256": "30a161b1796cfe35e7364264ae5c4c2290fe607f6b8292d3339b2267a8a19b09",
+      "unpackedBytes": 1321919024
+    },
+    {
+      "duplicateVerified": true,
+      "identity": "wch.riscv/1.0.1/win-x64",
+      "files": 16896,
+      "payloadVerified": true,
+      "manifestSha256": "a89e000730defd982acd808c8f889828b24082b44a9f82bf48cbf5078407dba6",
+      "unpackedBytes": 1174476223
+    },
+    {
+      "duplicateVerified": true,
+      "identity": "agm.logic/1.0.1/win-x64",
+      "files": 257,
+      "payloadVerified": true,
+      "manifestSha256": "93c426b2c2f1eb238944cb405d1b52d7c7cc7b6b91218157c2e31d0ff9ba94d2",
+      "unpackedBytes": 46980573
+    },
+    {
+      "duplicateVerified": true,
+      "identity": "espressif.idf/5.5.5/win-x64",
+      "files": 51572,
+      "payloadVerified": true,
+      "manifestSha256": "33f38477c3e05fb99962391249c19e6fb57658302b89504b4270932403e6fe8c",
+      "unpackedBytes": 5273943164
+    },
+    {
+      "duplicateVerified": true,
+      "identity": "espressif.idf/6.0.3/win-x64",
+      "files": 54766,
+      "payloadVerified": true,
+      "manifestSha256": "39f22f8017c09d865bd367c76e10e58b3b9c3f2eed2d914960eae757f3d8f0bf",
+      "unpackedBytes": 6086461582
+    },
+    {
+      "duplicateVerified": true,
+      "identity": "espressif.idf/6.1.0/win-x64",
+      "files": 56243,
+      "payloadVerified": true,
+      "manifestSha256": "3f7c9501c70555aac188f9266863f028cc977934d7e03f0eeffc0410cee98f95",
+      "unpackedBytes": 6136108498
+    }
+  ],
+  "notes": [
+    "Migration versions 1.0.1 for ARM/WCH/xPack/AGM are local fixtures using existing compilers, not upstream tool upgrades.",
+    "Candidates are not approved public binaries.",
+    "Existing signed catalog and published ZIP archive remain unchanged.",
+    "Product version alone does not prove an installed IDE supports 7z."
+  ],
+  "hardware": false,
+  "scope": "7z-container-and-local-component-candidates",
+  "status": "passed",
+  "ideAvailability": "local-development-build",
+  "formatVersion": 1,
+  "firmwareBuilds": [
+    {
+      "hardware": false,
+      "template": "hal",
+      "device": "STM32F407ZG",
+      "success": true
+    },
+    {
+      "hardware": false,
+      "template": "hello-world",
+      "device": "ESP32-S3",
+      "success": true
+    }
+  ]
+}

@@ -83,6 +83,27 @@
       "id": "stc.sdcc",
       "specification": "stc.sdcc/1.0.1/component.json",
       "host": "win-x64"
+    },
+    {
+      "host": "win-x64",
+      "version": "5.5.5",
+      "specification": "espressif.idf/5.5.5/component.json",
+      "id": "espressif.idf",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "host": "win-x64",
+      "version": "6.0.3",
+      "specification": "espressif.idf/6.0.3/component.json",
+      "id": "espressif.idf",
+      "publicationStatus": "pending-materials"
+    },
+    {
+      "host": "win-x64",
+      "version": "6.1.0",
+      "specification": "espressif.idf/6.1.0/component.json",
+      "id": "espressif.idf",
+      "publicationStatus": "pending-materials"
     }
   ],
   "formatVersion": 1

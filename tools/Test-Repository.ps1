@@ -43,7 +43,7 @@ foreach($reference in $releases.releases){
     Check ((Get-FileHash -LiteralPath $reviewPath).Hash -eq $spec.publication.reviewEvidence.sha256) 'published review bytes match the component and Release fingerprints'
 }
 foreach($file in Get-ChildItem -LiteralPath $root -File -Recurse -Force|Where-Object {$_.FullName -notlike ($root+'\.git\*')}){
-    if($file.Extension -in @('.exe','.dll','.zip','.mcutoolchain','.studioxtools','.dpapi','.pfx','.key')){throw 'Binary or private-key file entered the public repository.'}
+    if($file.Extension -in @('.exe','.dll','.zip','.7z','.mcutoolchain','.studioxtools','.dpapi','.pfx','.key')){throw 'Binary or private-key file entered the public repository.'}
     $text=[IO.File]::ReadAllText($file.FullName)
     if($text -match '-----BEGIN (?:RSA )?PRIVATE KEY-----' -or $text -match '(?i)[A-Z]:[\\/]Users[\\/]'){throw 'Secret material or developer account path entered the public repository.'}
 }

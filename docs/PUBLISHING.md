@@ -3,7 +3,7 @@
 维护机使用 PowerShell 7 / Windows；用户导入组件不需要这些发布工具。所有脚本使用显式本地输入，不自动获取 SDK 或操作硬件。
 
 1. 检查 Git 状态和组件登记。保留精确 ID、版本、编译器和原清单指纹；内容变化必须形成新组件版本。
-2. 使用 `tools/Build-ComponentCandidate.ps1 -Specification <component.json> -ToolsetDirectory <已验证目录> -OutputDirectory <新目录>` 核对全部文件摘要，生成 `.mcutoolchain` 和 `candidate.json`。输出始终是本地候选，不能直接加入公开目录。
+2. 使用 `tools/Build-ComponentCandidate.ps1 -Specification <component.json> -ToolsetDirectory <已验证目录> -OutputDirectory <新目录> [-SevenZipPath <7z.exe>]` 核对全部文件摘要，生成 7z/LZMA2 的 `.mcutoolchain` 和 `candidate.json`，保存原生完整性检查日志。仅发布维护机需要 7-Zip。输出始终是本地候选，不能直接加入公开目录。
 3. 用 IDE 的应用服务验证真实归档导入、完整内容校验、重复导入及对应构建流程。保存 `offline-build-and-import` 验证材料，绑定清单指纹、归档摘要及准确的验证范围。模拟工具不能替代真实构建；离线验收不代表硬件验收。
 4. 补齐版本对应的源码、构建脚本、修改与依赖材料，并核实厂商许可。提交审阅记录及摘要，登记源码资产名称、大小、SHA-256，确认后才把组件状态改为 `ready` 并填写许可。GCC 的运行库例外不等于可以不交付编译器的对应源码，见 [GCC 分发条款第 6 节](https://gcc.gnu.org/onlinedocs/gcc/Copying.html)。
 5. `Prepare-ComponentRelease.ps1` 读取规格、候选目录、验证文件和本地源码材料，核对实际字节后生成可审阅的 Release 目录、更新说明与逐文件摘要。它不发布。保持 `published=false`，不上传未准备好的目录。

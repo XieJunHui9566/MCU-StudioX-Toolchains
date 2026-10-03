@@ -1,0 +1,31 @@
+{
+  "license": "NOASSERTION",
+  "sourceUrls": [
+    "https://github.com/espressif/esp-idf/releases/tag/v5.5.5",
+    "https://github.com/espressif/crosstool-NG"
+  ],
+  "releaseNotes": "ESP-IDF 5.5.5 local candidate. Exact SDK/compiler identity and side-by-side import validated; no automatic project migration.",
+  "compilerId": "esp-idf",
+  "validation": {
+    "evidence": "validation/7z-local-candidates-20261003.json",
+    "notes": "Local native compilation, complete component import and duplicate import passed; public release materials remain incomplete.",
+    "status": "recorded",
+    "scope": "offline-build-and-import-local-candidate",
+    "hardware": false
+  },
+  "host": "win-x64",
+  "payloadFileCount": 51571,
+  "displayName": "Espressif ESP-IDF 5.5.5",
+  "version": "5.5.5",
+  "id": "espressif.idf",
+  "manifestSha256": "33f38477c3e05fb99962391249c19e6fb57658302b89504b4270932403e6fe8c",
+  "publication": {
+    "reviewEvidence": null,
+    "sourceAssets": [],
+    "status": "pending-materials",
+    "blockers": [
+      "Archive matching corresponding source, build scripts and dependency materials; complete redistribution review."
+    ]
+  },
+  "formatVersion": 1
+}
