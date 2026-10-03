@@ -16,7 +16,7 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+      "原目录的 Ninja 1.10.2 与官方同版本程序不同，尚缺该构建的匹配材料。编译器和 OpenOCD 已核对官方发行；另行提供使用官方 Ninja 的 1.0.2，保留旧工程内容锁。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null

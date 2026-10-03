@@ -16,8 +16,7 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。",
-      "需要核实厂商修改和专有工具的再分发条款。"
+      "定制 GCC 12.2.0 v1.4 和 OpenOCD 2026-08-25 缺匹配源码、构建脚本及厂商补丁；用户确认暂无，先完成其他组件。上游说明的详细源码联系人是 support@mounriver.com。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null

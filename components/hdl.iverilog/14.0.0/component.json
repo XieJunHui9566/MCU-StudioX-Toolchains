@@ -15,7 +15,7 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+      "原 Icarus 14.0 devel 二进制未记录可核对的源码提交及依赖构建来源。另行提供固定源码提交构建并通过仿真的 14.0.1，原版本保留供已锁定工程使用。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null

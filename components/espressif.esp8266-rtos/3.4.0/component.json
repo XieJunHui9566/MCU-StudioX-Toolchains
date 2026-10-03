@@ -16,7 +16,7 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+      "完整 IDE 导入、重复导入及真实 ELF 编译通过。已确认 crosstool-NG d5524c1 构建配置和厂商 GCC/Binutils/GDB esp-2020r3 源码标签，但历史 CI 使用未固定 revision 的分支；Newlib 在标签发布后发生变更，现有材料不能确定此二进制实际采用的 Newlib 提交。不能用普通 GCC 8.4.0 或猜测的分支快照代替对应源码，暂缓公开。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null

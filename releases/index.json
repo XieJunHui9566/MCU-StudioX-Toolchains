@@ -15,6 +15,15 @@
     },
     {
       "record": "releases/hdl.iverilog-14.0.1-win-x64.json"
+    },
+    {
+      "record": "releases/espressif.idf-5.5.4-win-x64.json"
+    },
+    {
+      "record": "releases/espressif.idf-5.5.5-win-x64.json"
+    },
+    {
+      "record": "releases/espressif.idf-6.0.3-win-x64.json"
     }
   ]
 }

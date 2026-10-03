@@ -16,7 +16,7 @@
   "publication": {
     "status": "pending-materials",
     "blockers": [
-      "需要归档匹配版本的对应源码、构建脚本及依赖材料。"
+      "原目录的 39 份 libnosys.a 和 GDB 15.2 不匹配 Arm GNU 15.2.Rel1 官方发行，尚缺这些替换文件的匹配构建材料。已另行提供以未修改官方发行组装的 1.0.2；旧版本与工程内容锁保留。"
     ],
     "sourceAssets": [],
     "reviewEvidence": null
