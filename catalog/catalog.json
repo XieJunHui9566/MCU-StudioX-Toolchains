@@ -136,6 +136,36 @@
       "releaseNotes": "提供匹配源码、厂商构建脚本及依赖材料。完整导入与重复导入、三个架构基础编译及 ESP32-S3 完整 SDK 构建通过。精确版本并存，已有工程内容锁保持原样。",
       "pluginApi": 0,
       "frameworks": []
+    },
+    {
+      "kind": "tool",
+      "id": "studiox.mx251",
+      "version": "0.0.170",
+      "name": "MX251 0.0170（测试）",
+      "archive": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/studiox.mx251-0.0.170-win-x64/studiox.mx251-0.0.170-win-x64.mcutoolchain",
+      "sha256": "4444ce4c71c7ef63ab8c070724de90796a9df739677e8127903edd8004b0ea5e",
+      "downloadBytes": 88105843,
+      "installedBytes": 348522654,
+      "license": "MX251/SDCC GPL-2.0-or-later; assembler/linker/preprocessor/binutils per-file GPL; runtime exceptions; PowerShell MIT; dependency notices retained",
+      "sourceUrl": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/tree/main/components/studiox.mx251/0.0.170",
+      "releaseNotes": "MX251 0.0170（测试）：合并通用编译器优化和原生整数/浮点运行库，提供 AI8051U-32bit、STC32G Target Profile，保留独立 CMake/Ninja 入口。体积达线与实板性能仍逐项区分。",
+      "pluginApi": 0,
+      "frameworks": []
+    },
+    {
+      "kind": "tool",
+      "id": "studiox.cmake",
+      "version": "4.4.0",
+      "name": "CMake / Ninja 工程构建",
+      "archive": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/download/studiox.cmake-4.4.0-win-x64/studiox.cmake-4.4.0-win-x64.mcutoolchain",
+      "sha256": "180b42ea5d52b228a4e20c94ea8e029919627977772f5239fdb26aae8c7fc920",
+      "downloadBytes": 26002017,
+      "installedBytes": 144900983,
+      "license": "CMake: BSD-3-Clause and bundled notices; Ninja: Apache-2.0; statically linked Qt 6.10.1: LGPL-3.0, matching QtBase and CMake source delivered",
+      "sourceUrl": "https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/tree/main/components/studiox.cmake/4.4.0",
+      "releaseNotes": "独立 CMake 4.4.0 / Ninja 1.10.2 工程构建组件。清单与已安装的 4.4.0 相同；原始 GUI 中 Qt 6.10.1 的对应 QtBase 源码和许可证随本 Release 提供。",
+      "pluginApi": 0,
+      "frameworks": []
     }
   ]
 }
