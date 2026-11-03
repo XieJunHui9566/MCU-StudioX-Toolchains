@@ -1,0 +1,89 @@
+{
+  "formatVersion": 1,
+  "id": "studiox.mx251",
+  "version": "0.0.170",
+  "host": "win-x64",
+  "compilerId": "mx251-v0.0170",
+  "displayName": "MX251 0.0170（测试）",
+  "manifestSha256": "cb016a2b46d10477415a9bf3688a381ce15bfcea97266591eccef3e5b990372c",
+  "payloadFileCount": 3240,
+  "sourceUrls": [
+    "https://github.com/XieJunHui9566/MX251/tree/v0.0170-test",
+    "https://github.com/gevico/sdcc-c251/tree/b09075b6a93e6afe10645181e3aeff041ea37f87",
+    "https://github.com/PowerShell/PowerShell"
+  ],
+  "license": "MX251/SDCC GPL-2.0-or-later; assembler/linker/preprocessor/binutils per-file GPL; runtime exceptions; PowerShell MIT; dependency notices retained",
+  "releaseNotes": "MX251 0.0170（测试）：合并通用编译器优化和原生整数/浮点运行库，提供 AI8051U-32bit、STC32G Target Profile，保留独立 CMake/Ninja 入口。体积达线与实板性能仍逐项区分。",
+  "publication": {
+    "status": "ready",
+    "blockers": [],
+    "sourceAssets": [
+      {
+        "file": "MX251-0.0170-source.zip",
+        "sha256": "9b13ae1b4f23c7d65b31a15889b2398f99a15186bd4e45411d3db8881e3c724a",
+        "bytes": 7155821
+      },
+      {
+        "file": "sdcc-c251-b09075b-source.zip",
+        "sha256": "467fe3c8d1ecabc78422f71cde82a996228e129dd12aab4d39c467b8bf19d9ae",
+        "bytes": 47242926
+      },
+      {
+        "file": "third-party-sources.zip",
+        "sha256": "5b3213de905ffb5a329b2d61b12517e0358fa2eab2e6875803828feb81c6849b",
+        "bytes": 20828899
+      },
+      {
+        "file": "studiox.mx251-0.0.170-win-x64-build-and-notices.zip",
+        "sha256": "0e694bb26441aaab6d1f0ed905a3ec4873827941c80de88cfe6a9283e4118f97",
+        "bytes": 139450
+      }
+    ],
+    "reviewEvidence": {
+      "file": "reviews/studiox.mx251-0.0.170-win-x64.json",
+      "sha256": "47f1a487cba8951d3023751ed06765ec100191f3090c3a1456f249842970a846"
+    }
+  },
+  "validation": {
+    "formatVersion": 1,
+    "status": "passed",
+    "scope": "offline-build-and-import",
+    "hardware": false,
+    "id": "studiox.mx251",
+    "version": "0.0.170",
+    "host": "win-x64",
+    "compilerId": "mx251-v0.0170",
+    "manifestSha256": "cb016a2b46d10477415a9bf3688a381ce15bfcea97266591eccef3e5b990372c",
+    "archiveSha256": "4444ce4c71c7ef63ab8c070724de90796a9df739677e8127903edd8004b0ea5e",
+    "archiveFiles": 3241,
+    "downloadBytes": 88105843,
+    "installedBytes": 348522654,
+    "checks": [
+      "Exact archive extraction verifies all manifest files and original component identity.",
+      "Reused existing successful real StudioX import and installed pack receipts from 2026-11-03.",
+      "Reused AI8051U registers 215 B, AI8051U library 478 B, STC32G registers 471 B CMake builds.",
+      "Reused public standalone path-with-spaces CMake build; no hardware or all-project performance claim."
+    ],
+    "reusedEvidence": {
+      "date": "2026-11-03",
+      "templates": [
+        {
+          "target": "AI8051U-34K64",
+          "template": "registers",
+          "bytes": 215
+        },
+        {
+          "target": "AI8051U-34K64",
+          "template": "library",
+          "bytes": 478
+        },
+        {
+          "target": "STC32G12K128",
+          "template": "registers",
+          "bytes": 471
+        }
+      ],
+      "hardwareExecuted": false
+    }
+  }
+}

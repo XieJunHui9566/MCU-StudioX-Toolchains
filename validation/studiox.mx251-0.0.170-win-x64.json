@@ -1,0 +1,42 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "studiox.mx251",
+  "version": "0.0.170",
+  "host": "win-x64",
+  "compilerId": "mx251-v0.0170",
+  "manifestSha256": "cb016a2b46d10477415a9bf3688a381ce15bfcea97266591eccef3e5b990372c",
+  "archiveSha256": "4444ce4c71c7ef63ab8c070724de90796a9df739677e8127903edd8004b0ea5e",
+  "archiveFiles": 3241,
+  "downloadBytes": 88105843,
+  "installedBytes": 348522654,
+  "checks": [
+    "Exact archive extraction verifies all manifest files and original component identity.",
+    "Reused existing successful real StudioX import and installed pack receipts from 2026-11-03.",
+    "Reused AI8051U registers 215 B, AI8051U library 478 B, STC32G registers 471 B CMake builds.",
+    "Reused public standalone path-with-spaces CMake build; no hardware or all-project performance claim."
+  ],
+  "reusedEvidence": {
+    "date": "2026-11-03",
+    "templates": [
+      {
+        "target": "AI8051U-34K64",
+        "template": "registers",
+        "bytes": 215
+      },
+      {
+        "target": "AI8051U-34K64",
+        "template": "library",
+        "bytes": 478
+      },
+      {
+        "target": "STC32G12K128",
+        "template": "registers",
+        "bytes": 471
+      }
+    ],
+    "hardwareExecuted": false
+  }
+}

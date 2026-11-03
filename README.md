@@ -12,7 +12,11 @@ GitHub 下载不便时，可通过网盘手动下载下表所列开发环境组�
 
 组件包与对应源码材料应一并提供；网盘分享页供浏览器下载使用，IDE 自动获取仍使用签名 GitHub 目录。操作见[使用说明](docs/USAGE.md#百度网盘手动下载)。
 
-## 已公开发布
+## 2026-11-03 更新
+
+新增 [MX251 0.0170 测试组件](https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/tag/studiox.mx251-0.0.170-win-x64) 与 [独立 CMake/Ninja 组件](https://github.com/XieJunHui9566/MCU-StudioX-Toolchains/releases/tag/studiox.cmake-4.4.0-win-x64)。当前签名目录共 11 个已公开组件。新增组件证据见 validation/；历史组件验证不重复执行。
+
+## 原有 9 个公开组件
 
 | 开发环境组件 | 包大小 | 内容 |
 | --- | ---: | --- |

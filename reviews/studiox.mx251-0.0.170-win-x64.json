@@ -1,0 +1,48 @@
+{
+  "formatVersion": 1,
+  "status": "approved",
+  "scope": "redistribution-materials-and-binary-inventory",
+  "id": "studiox.mx251",
+  "version": "0.0.170",
+  "host": "win-x64",
+  "compilerId": "mx251-v0.0170",
+  "manifestSha256": "cb016a2b46d10477415a9bf3688a381ce15bfcea97266591eccef3e5b990372c",
+  "archiveSha256": "4444ce4c71c7ef63ab8c070724de90796a9df739677e8127903edd8004b0ea5e",
+  "sourceAssets": [
+    {
+      "file": "MX251-0.0170-source.zip",
+      "sha256": "9b13ae1b4f23c7d65b31a15889b2398f99a15186bd4e45411d3db8881e3c724a",
+      "bytes": 7155821
+    },
+    {
+      "file": "sdcc-c251-b09075b-source.zip",
+      "sha256": "467fe3c8d1ecabc78422f71cde82a996228e129dd12aab4d39c467b8bf19d9ae",
+      "bytes": 47242926
+    },
+    {
+      "file": "third-party-sources.zip",
+      "sha256": "5b3213de905ffb5a329b2d61b12517e0358fa2eab2e6875803828feb81c6849b",
+      "bytes": 20828899
+    },
+    {
+      "file": "studiox.mx251-0.0.170-win-x64-build-and-notices.zip",
+      "sha256": "0e694bb26441aaab6d1f0ed905a3ec4873827941c80de88cfe6a9283e4118f97",
+      "bytes": 139450
+    }
+  ],
+  "license": "MX251/SDCC GPL-2.0-or-later; assembler/linker/preprocessor/binutils per-file GPL; runtime exceptions; PowerShell MIT; dependency notices retained",
+  "sourceUrls": [
+    "https://github.com/XieJunHui9566/MX251/tree/v0.0170-test",
+    "https://github.com/gevico/sdcc-c251/tree/b09075b6a93e6afe10645181e3aeff041ea37f87",
+    "https://github.com/PowerShell/PowerShell"
+  ],
+  "materials": [
+    "Current corresponding source, packaging recipes and retained dependency notices are delivered with this immutable component.",
+    "No private IDE user data, commercial compiler or private license file is included."
+  ],
+  "limitations": [
+    "Offline evidence only; no new hardware or whole SDK matrix qualification.",
+    "Compiler version is 0.0170 test; package semver is 0.0.170."
+  ],
+  "validationEvidenceSha256": "7f0f5ad7a6fb337c8222aceb01049bc1805240b3221ff446aa6f368ce24b3185"
+}

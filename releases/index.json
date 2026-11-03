@@ -27,6 +27,12 @@
     },
     {
       "record": "releases/espressif.idf-6.1.0-win-x64.json"
+    },
+    {
+      "record": "releases/studiox.mx251-0.0.170-win-x64.json"
+    },
+    {
+      "record": "releases/studiox.cmake-4.4.0-win-x64.json"
     }
   ]
 }

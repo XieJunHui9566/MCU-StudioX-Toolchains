@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1,
+  "id": "studiox.cmake",
+  "version": "4.4.0",
+  "host": "win-x64",
+  "compilerId": "cmake-ninja",
+  "displayName": "CMake / Ninja 工程构建",
+  "manifestSha256": "03990b32533071761782efb99c3bb01211a60e5d335dfbae08af72df6bbd3365",
+  "payloadFileCount": 8821,
+  "sourceUrls": [
+    "https://github.com/Kitware/CMake/tree/v4.4.0",
+    "https://github.com/ninja-build/ninja/tree/v1.10.2",
+    "https://download.qt.io/archive/qt/6.10/6.10.1/submodules/"
+  ],
+  "license": "CMake: BSD-3-Clause and bundled notices; Ninja: Apache-2.0; statically linked Qt 6.10.1: LGPL-3.0, matching QtBase and CMake source delivered",
+  "releaseNotes": "独立 CMake 4.4.0 / Ninja 1.10.2 工程构建组件。清单与已安装的 4.4.0 相同；原始 GUI 中 Qt 6.10.1 的对应 QtBase 源码和许可证随本 Release 提供。",
+  "publication": {
+    "status": "ready",
+    "blockers": [],
+    "sourceAssets": [
+      {
+        "file": "cmake-4.4.0.tar.gz",
+        "sha256": "65757f442fdd242e27f1728fc26dc0cba4164f7a0791a5c788631c00080369bc",
+        "bytes": 13275398
+      },
+      {
+        "file": "ninja-1.10.2.tar.gz",
+        "sha256": "ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed",
+        "bytes": 213959
+      },
+      {
+        "file": "qtbase-everywhere-src-6.10.1.tar.xz",
+        "sha256": "5a6226f7e23db51fdc3223121eba53f3f5447cf0cc4d6cb82a3a2df7a65d265d",
+        "bytes": 50234516
+      },
+      {
+        "file": "studiox.cmake-4.4.0-win-x64-build-and-notices.zip",
+        "sha256": "b51a39f4224d660f6ac1e470cc7714a27dccad46e88256042e8404685c99121f",
+        "bytes": 35711
+      }
+    ],
+    "reviewEvidence": {
+      "file": "reviews/studiox.cmake-4.4.0-win-x64.json",
+      "sha256": "f849212b62e463f13367a9a30f320c29876d7900925b049671afa6a38bf605be"
+    }
+  },
+  "validation": {
+    "formatVersion": 1,
+    "status": "passed",
+    "scope": "offline-build-and-import",
+    "hardware": false,
+    "id": "studiox.cmake",
+    "version": "4.4.0",
+    "host": "win-x64",
+    "compilerId": "cmake-ninja",
+    "manifestSha256": "03990b32533071761782efb99c3bb01211a60e5d335dfbae08af72df6bbd3365",
+    "archiveSha256": "180b42ea5d52b228a4e20c94ea8e029919627977772f5239fdb26aae8c7fc920",
+    "archiveFiles": 8822,
+    "downloadBytes": 26002017,
+    "installedBytes": 144900983,
+    "checks": [
+      "Exact archive extraction verifies all manifest files and original component identity.",
+      "CMake 4.4.0 / Ninja 1.10.2 executed from the extracted component.",
+      "Existing AI8051U and STC32G CMake template builds reused; no firmware retest."
+    ],
+    "reusedEvidence": {
+      "date": "2026-11-03",
+      "templates": [
+        {
+          "target": "AI8051U-34K64",
+          "template": "registers",
+          "bytes": 215
+        },
+        {
+          "target": "AI8051U-34K64",
+          "template": "library",
+          "bytes": 478
+        },
+        {
+          "target": "STC32G12K128",
+          "template": "registers",
+          "bytes": 471
+        }
+      ],
+      "hardwareExecuted": false
+    }
+  }
+}

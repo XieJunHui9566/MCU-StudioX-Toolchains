@@ -1,0 +1,41 @@
+{
+  "formatVersion": 1,
+  "status": "passed",
+  "scope": "offline-build-and-import",
+  "hardware": false,
+  "id": "studiox.cmake",
+  "version": "4.4.0",
+  "host": "win-x64",
+  "compilerId": "cmake-ninja",
+  "manifestSha256": "03990b32533071761782efb99c3bb01211a60e5d335dfbae08af72df6bbd3365",
+  "archiveSha256": "180b42ea5d52b228a4e20c94ea8e029919627977772f5239fdb26aae8c7fc920",
+  "archiveFiles": 8822,
+  "downloadBytes": 26002017,
+  "installedBytes": 144900983,
+  "checks": [
+    "Exact archive extraction verifies all manifest files and original component identity.",
+    "CMake 4.4.0 / Ninja 1.10.2 executed from the extracted component.",
+    "Existing AI8051U and STC32G CMake template builds reused; no firmware retest."
+  ],
+  "reusedEvidence": {
+    "date": "2026-11-03",
+    "templates": [
+      {
+        "target": "AI8051U-34K64",
+        "template": "registers",
+        "bytes": 215
+      },
+      {
+        "target": "AI8051U-34K64",
+        "template": "library",
+        "bytes": 478
+      },
+      {
+        "target": "STC32G12K128",
+        "template": "registers",
+        "bytes": 471
+      }
+    ],
+    "hardwareExecuted": false
+  }
+}
